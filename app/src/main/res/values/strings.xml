@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Shlok Mantra App</string>
+    <string name="krishna_mantra"><u>Krishna Mantra </u>.......................<u>Krishna Mantra </u>..........................</string>
+    <string name="rama_mantra"><u>Rama Mantra</u>.............................<u>Rama Mantra</u>................................</string>
+    <string name="brahma_mantra"><u>Brahma Mantra</u>.............................<u>Brahma Mantra</u>.........................</string>
+    <string name="vishnu_mantra"><u>Vishnu Mantra</u>...............................<u>Vishnu Mantra</u>........................</string>
+    <string name="shiva_mantras"><u>Shiva Mantras</u>.....................................<u>Shiva Mantras</u>...................</string>
+    <string name="ganesha_mantra"><u>Ganesha Mantra</u>....................................<u>Ganesha Mantra</u>.................</string>
+    <string name="hanumaan_mantra"><u>Hanumaan Mantra</u>...................................<u>Hanumaan Mantra</u>................</string>
+    <string name="h1" translatable="false">Om Hanumate Namah</string>
+</resources>
