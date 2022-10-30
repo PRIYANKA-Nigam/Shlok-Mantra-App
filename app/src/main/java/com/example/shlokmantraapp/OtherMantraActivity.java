@@ -14,52 +14,72 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Locale;
 
-public class GayatriActivity extends AppCompatActivity {
-TextView t1,t2,t3,textView;
-    TextToSpeech textToSpeech;
+public class OtherMantraActivity extends AppCompatActivity {
+TextView t1,t2; TextToSpeech textToSpeech;
+ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gayatri);
-        textView=findViewById(R.id.textView2);
-        textView.setSelected(true);
+        setContentView(R.layout.activity_other_mantra);
+        t1=findViewById(R.id.textView11); t1.setSelected(true);
+        t2=findViewById(R.id.textView12);
+        imageView=findViewById(R.id.imageView5);
         textToSpeech=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
                 if (status==TextToSpeech.SUCCESS){ int lang=textToSpeech.setLanguage(Locale.ENGLISH); }
             }
         });
-        t1=findViewById(R.id.tt);
-        t2=findViewById(R.id.tt2);
-        t3=findViewById(R.id.tt3);
-        t1.setText(R.string.ga1);
-        t2.setText(R.string.ga2);
-        t3.setText(R.string.ga3);
-        t1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String p=t1.getText().toString();
-                int speech =textToSpeech.speak(p,TextToSpeech.QUEUE_FLUSH,null);
-                Toast.makeText(getApplicationContext(),"Reading for you ...",Toast.LENGTH_SHORT).show();
-            }
-        });
-        t2.setOnClickListener(new View.OnClickListener() {
+        String s=getIntent().getStringExtra("flag");
+        switch (s){
+            case "kd":
+                t2.setText(R.string.kd);break;
+            case "lk":
+                t2.setText(R.string.lk);break;
+            case "bm":
+                t2.setText(R.string.bm);break;
+            case "vm":
+                t2.setText(R.string.vm);break;
+            case "km":
+                t2.setText(R.string.km);break;
+            case "pm":
+                t2.setText(R.string.pm);break;
+            case "sm":
+                t2.setText(R.string.sm);break;
+                case "vhm":
+                t2.setText(R.string.vhm);break;
+                case "vhhm":
+                t2.setText(R.string.vhhm);break;
+                case "spm":
+                t2.setText(R.string.spm);break;
+            case "cpm":
+                t2.setText(R.string.cpm);break;
+            case "sdm":
+                t2.setText(R.string.sdm);break;
+            case "sam":
+                t2.setText(R.string.sam);break;
+            case "mpm":
+                t2.setText(R.string.mpm);break;
+            case "lsm":
+                t2.setText(R.string.lsm);break;
+            case "lkm":
+                t2.setText(R.string.lkm);break;
+            case "lgm":
+                t2.setText(R.string.lgm);break;
+            case "scm":
+                t2.setText(R.string.scm);break;
+
+        }
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String p=t2.getText().toString();
-                int speech =textToSpeech.speak(p,TextToSpeech.QUEUE_FLUSH,null);
-                Toast.makeText(getApplicationContext(),"Reading for you ...",Toast.LENGTH_SHORT).show();
-            }
-        });
-        t3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String p=t3.getText().toString();
                 int speech =textToSpeech.speak(p,TextToSpeech.QUEUE_FLUSH,null);
                 Toast.makeText(getApplicationContext(),"Reading for you ...",Toast.LENGTH_SHORT).show();
             }
@@ -71,6 +91,7 @@ TextView t1,t2,t3,textView;
         menuInflater.inflate(R.menu.hindi,menu);
         return super.onCreateOptionsMenu(menu);
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==R.id.hi){
@@ -81,7 +102,7 @@ TextView t1,t2,t3,textView;
 
     private void ShowLang() {
         final String [] list={"Hindi","English"};
-        AlertDialog.Builder mbuild=new AlertDialog.Builder(GayatriActivity.this);
+        AlertDialog.Builder mbuild=new AlertDialog.Builder(OtherMantraActivity.this);
         mbuild.setTitle("Choose Language ...");
         mbuild.setSingleChoiceItems(list, -1, new DialogInterface.OnClickListener() {
             @Override

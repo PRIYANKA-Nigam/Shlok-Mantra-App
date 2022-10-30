@@ -7,7 +7,7 @@
     <string name="shiva_mantras" translatable="false"><u>Shiva Mantras</u>.....................................<u>Shiva Mantras</u>...................</string>
     <string name="ganesha_mantra" translatable="false"><u>Ganesha Mantra</u>....................................<u>Ganesha Mantra</u>.................</string>
     <string name="hanumaan_mantra" translatable="false"><u>Hanumaan Mantra</u>...................................<u>Hanumaan Mantra</u>................</string>
-    <string name="h1" translatable="true">Om Hanumate Namah</string>
+    <string name="h1">Om Hanumate Namah</string>
     <string name="h2">Om Namo Bhagvate Aanjaneyaay Mahaabalaay Swaahaa</string>
     <string name="h3">Aum Aeem Bhreem Hanumate Shree Ram Dootaaya Namaha</string>
     <string name="h4">!! Om Shree Vajradehaya Ramabhaktaya Vayuputhraya Namosthuthe !!</string>
@@ -50,5 +50,45 @@
     <string name="sh3">Mantra to remove the fear of death </string>
     <string name="sh4">Mantra to get Rudra’s blessing </string>
     <string name="sh5">Mantra to seek forgiveness from Lord Shiva for any sin </string>
+    <string name="lakshmi_mantra" translatable="false"><u>Lakshmi Mantra</u>......................<u>Lakshmi Mantra</u>...............</string>
+    <string name="durga_mantra" translatable="false"><u>Durga Mantra</u>....................<u>Durga Mantra</u>.................</string>
+    <string name="shlok" translatable="false"><u>Shlok</u>..................<u>Shlok</u>....................</string>
+    <string name="gayatri_mantra" translatable="false"><u>Gayatri Mantra</u>....................<u>Gayatri Mantra</u>.................</string>
+    <string name="ga1">Om bhūr bhuvaḥ suvaḥ tatsaviturvareṇyaṃ bhargo devasdhīmahi dhiyo yo naḥ prachodayāt</string>
+    <string name="ga2">O, Divine mother, our hearts are loaded up with darkness. Kindly make this darkness distant from us and advance brightening inside us.</string>
+    <string name="ga3">Regular chanting of Gayatri Mantra improves concentration and learning It is known for removing toxins from the body improves breathing and functioning of the nervous system.keeps your heart healthy and removes the negativity</string>
+    <string name="l2">Om Mahalakshmi Namahae Om Gaja Lakshmi Namahae Om Jaya Lakshmi Namahae Om Thana Lakshmi Namahae Om Santana Lakshmi Namahae Om Seetha Lakshmi Namahae Om Thaireya Lakshmi Namahae Om Thannya Lakshmi Namahae Om Vidya Lakshmi Namahae Om Maha Vishu Mahalakshmi Namahae</string>
+    <string name="l3">Aum Shring Hring Kleeng Mahalakshmi Namah Aum</string>
+    <string name="l4">"Namastestu Mahaa-Maaye Shree-Peete Sura-Poojite | Shankh-Chakra-Gadaa-Haste Mahaalakshmi Namostute"</string>
+    <string name="d1">Sarva Mangala Mangalye Sive Sarvartha Sadhike Saranye Trayambike Gauri Narayani Namostute</string>
+    <string name="d2">Ya devi sarva bhuteshu, shanti rupena sangsthitaYa devi sarva bhuteshu, shakti rupena sangsthita Ya devi sarva bhuteshu, matri rupena sangsthita Yaa devi sarva bhuteshu, buddhi rupena sangsthita Namastasyai, namastasyai, namastasyai, namo namaha</string>
+    <string name="d3">SHANTI KARMANI SWAPNA DARSHANE GRAH PIDAASU CHOGRASU MAAHAATMYAM SRINU YAANMAM</string>
+    <string name="lt1">To gain and prosperity in life</string>
+    <string name="lt2">To bring youth beauty, happiness in life</string>
+    <string name="lt3">For taking Lakshmi blessings</string>
+    <string name="lt4">For praising the goddess</string>
+    <string name="dt1">To gain  wisdom and strength and prosperity in life</string>
+    <string name="dt2">To block negative thoughts and banish ignorance</string>
+    <string name="dt3">For protection from bad dreams and omens</string>
+    <string name="l1">Shreem</string>
+    <string name="mantra" translatable="false"><u>Mantra</u>.......................<u>Mantra</u>.....................</string>
+    <string name="kd">Om Shreem Hreem Kleem Shreem Kleem Vitteshvaraya Namah</string>
+    <string name="lk">Om Hreem Shreem Kreem Shreem Kuberaya Ashta-Lakshmi Mama Grihe Dhanam Puraya Puraya Namah</string>
+    <string name="bm">Om Aing Mahasaraswatyai Namah |</string>
+    <string name="vm">Saraswati Namasthubhyam Varade Kamarupini Vidyarambham KarishyamiSiddhir Bavathume Sadha</string>
+    <string name="km">Katyayani Mahamaye Mahayoginyadheeshwari ? Nandgopsutam Devipatim Me Kuru te Namah</string>
+    <string name="pm">"Hey Gauri Shankarardhangi Yatha Tvam Shankarpriyaa ? Tatha Mam Kuru Kalyaani Kaantkatam Sudurlabhaam "</string>
+    <string name="sm">Om Devendrani Namastubhyam Devendrapriya Bhamini ? Vivaaham Bhagyamaarogyam Sheeghralabham Cha Dehi Me</string>
+    <string name="vhm">Om Katyayani Mahamaye Mahayoginyadhisvari | Nandgopasut Devi Patim Me Kuru Te Namah ||</string>
+    <string name="vhhm">Om Shang Shankaray Sakal Janmarjit paap Vidhvans Naay Purusharth Chatustay Labhay ch Patim me Dehi Kuru-Kuru Swaha ||</string>
+    <string name="spm">Om Hreem Yogini Yogini Yogeswari Yoga Bhayankari Sakala Sthavara Jangamasya Mukha Hrudayam Mama Vasam Akarsha Akarshaya Namaha</string>
+    <string name="cpm">Om Bhanve Namah:Khagay Namah:Om hateful sun Om Pushne Namah:Om Hiranyagarbhaya Namah:mariechee namah:Om Aditya.Om Savitre Namah:Om Arkay Namah:Om Bhaskarai Namah:Om Sri Savitri Suryanarayanaya Namah:</string>
+    <string name="sdm">Adidev Namastubhyam Prasidam Bhaskar.Divakar Namastubhayam Prabhakar Namostu Te..</string>
+    <string name="sam">sun soul jagastasyusha adityasya namaskar these kurvanti days</string>
+    <string name="mpm">Om Namah Shivaaya Namoh||</string>
+    <string name="lsm">Om Namah Shivaye ||</string>
+    <string name="lkm">Om Shanmukhaya Namah||</string>
+    <string name="lgm">Om Ganeshaye Namah||</string>
+    <string name="scm">Om Somaya Namah||</string>
 
 </resources>

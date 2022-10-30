@@ -47,50 +47,33 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
                 dayarrayList.add(days[i]);
             }
         }
-        if (parentArrayList.get(position).equals("Mantras for Health & wealth")){
-            String[] days={"Shlok1","Shlok2","Shlok3","Shlok4"};
-            for (int i=0;i<days.length;i++){
-                dayarrayList.add(days[i]);
-            }
-        }
-        if(parentArrayList.get(position).equals("Mantras for Health recovery")){
-            String[] days={"Shlok1","Shlok2"};
-            for (int i=0;i<days.length;i++){
-                dayarrayList.add(days[i]);
-            }
-        }
         if (parentArrayList.get(position).equals("Lakshmi & Kuber Mantra")){
-            String[] days={"Shlok1","Shlok2"};
-            for (int i=0;i<days.length;i++){
-                dayarrayList.add(days[i]);
-            }
-        }
-        if (parentArrayList.get(position).equals("Mantra for Knowledge & wisdom")){
-            String[] days={"Shlok1","Shlok2"};
+            String[] days={"Kubera Dhana Prapti Mantra","Laxmi Kuber Mantra"};
             for (int i=0;i<days.length;i++){
                 dayarrayList.add(days[i]);
             }
         }
         if (parentArrayList.get(position).equals("Mantra for Study/Exams")){
-            String[] days={"Shlok1","Shlok2"};
+            String[] days={"The Bija Mantra of Goddess Sarawati","Vidya Mantra"};
             for (int i=0;i<days.length;i++){
                 dayarrayList.add(days[i]);
             }
         }
         if (parentArrayList.get(position).equals("Mantra for Marriage")){
-            String[] days={"Shlok1","Shlok2"};
+            String[] days={"Katyayani Mantra","Parvati Mantra for delayed Marriages","Surya Mantra for delayed Marriages",
+            "Vivah Hetu Mantra1","Vivah Hetu Mantra2","Shiva Parvati Mantra for happy married life"};
             for (int i=0;i<days.length;i++){
                 dayarrayList.add(days[i]);
             }
         }
-        if (parentArrayList.get(position).equals("Sakat Chauth Mantra")){
-            String[] days={"Shlok1","Shlok2"};
+        if (parentArrayList.get(position).equals("Chhath puja Mantra")){
+            String[] days={"Chhath Puja Mantra","Surya Dev Mantra","Suryadev Aradhana Mantra"};
             for (int i=0;i<days.length;i++){
                 dayarrayList.add(days[i]);
             }
         }
         if (parentArrayList.get(position).equals("Karwa Chauth Mantra")){
-            String[] days={"Shlok1","Shlok2"};
+            String[] days={"Maa Parvati Mantra","Lord Shiva Mantra","Lord Kartikeya Mantra","Lord Ganesha Mantra","Shri Chandrama Mantra"};
             for (int i=0;i<days.length;i++){
                 dayarrayList.add(days[i]);
             }

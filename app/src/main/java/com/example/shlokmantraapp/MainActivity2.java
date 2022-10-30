@@ -127,10 +127,220 @@ ImageView imageView; Button button;
                         }
                     });
                 }
+        if (s.equalsIgnoreCase("Kubera Dhana Prapti Mantra")){
+            imageView.setImageResource(R.drawable.kuber);
+            String flag="kd";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
 
-
-
-
-
+        if (s.equalsIgnoreCase("Laxmi Kuber Mantra")) {
+            imageView.setImageResource(R.drawable.kuber);
+            String flag = "lk";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity2.this, OtherMantraActivity.class);
+                    intent.putExtra("flag", flag);
+                    startActivity(intent);
+                }
+            });
+        }
+            if (s.equalsIgnoreCase("The Bija Mantra of Goddess Sarawati")) {
+                imageView.setImageResource(R.drawable.vidya);
+                String flag = "bm";
+                button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(MainActivity2.this, OtherMantraActivity.class);
+                        intent.putExtra("flag", flag);
+                        startActivity(intent);
+                    }
+                });
+            }
+                if (s.equalsIgnoreCase("Vidya Mantra")){
+                    imageView.setImageResource(R.drawable.vidya);
+                    String flag="vm";
+                    button.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                            intent.putExtra("flag",flag);
+                            startActivity(intent);
+                        }
+                    });
+        }
+        if (s.equalsIgnoreCase("Katyayani Mantra")){
+            imageView.setImageResource(R.drawable.wed);
+            String flag="km";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Parvati Mantra for delayed Marriages")){
+            imageView.setImageResource(R.drawable.wed);
+            String flag="pm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Surya Mantra for delayed Marriages")){
+            imageView.setImageResource(R.drawable.wed);
+            String flag="sm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        } if (s.equalsIgnoreCase("Vivah Hetu Mantra1")){
+            imageView.setImageResource(R.drawable.wed);
+            String flag="vhm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        } if (s.equalsIgnoreCase("Vivah Hetu Mantra2")){
+            imageView.setImageResource(R.drawable.wed);
+            String flag="vhhm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Shiva Parvati Mantra for happy married life")){
+            imageView.setImageResource(R.drawable.wed);
+            String flag="spm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Chhath Puja Mantra")){
+            imageView.setImageResource(R.drawable.chhath);
+            String flag="cpm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Surya Dev Mantra")){
+            imageView.setImageResource(R.drawable.chhath);
+            String flag="sdm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Suryadev Aradhana Mantra")){
+            imageView.setImageResource(R.drawable.chhath);
+            String flag="sam";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Maa Parvati Mantra")){
+            imageView.setImageResource(R.drawable.karwas);
+            String flag="mpm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Lord Shiva Mantra")){
+            imageView.setImageResource(R.drawable.karwas);
+            String flag="lsm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Lord Kartikeya Mantra")){
+            imageView.setImageResource(R.drawable.karwas);
+            String flag="lkm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Lord Ganesha Mantra")){
+            imageView.setImageResource(R.drawable.karwas);
+            String flag="lgm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Shri Chandrama Mantra")){
+            imageView.setImageResource(R.drawable.karwas);
+            String flag="scm";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
     }
 }
