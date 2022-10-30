@@ -1,11 +1,54 @@
 <resources>
     <string name="app_name">Shlok Mantra App</string>
-    <string name="krishna_mantra"><u>Krishna Mantra </u>.......................<u>Krishna Mantra </u>..........................</string>
-    <string name="rama_mantra"><u>Rama Mantra</u>.............................<u>Rama Mantra</u>................................</string>
-    <string name="brahma_mantra"><u>Brahma Mantra</u>.............................<u>Brahma Mantra</u>.........................</string>
-    <string name="vishnu_mantra"><u>Vishnu Mantra</u>...............................<u>Vishnu Mantra</u>........................</string>
-    <string name="shiva_mantras"><u>Shiva Mantras</u>.....................................<u>Shiva Mantras</u>...................</string>
-    <string name="ganesha_mantra"><u>Ganesha Mantra</u>....................................<u>Ganesha Mantra</u>.................</string>
-    <string name="hanumaan_mantra"><u>Hanumaan Mantra</u>...................................<u>Hanumaan Mantra</u>................</string>
-    <string name="h1" translatable="false">Om Hanumate Namah</string>
+    <string name="krishna_mantra" translatable="false"><u>Krishna Mantra </u>.......................<u>Krishna Mantra </u>..........................</string>
+    <string name="rama_mantra" translatable="false"><u>Rama Mantra</u>.............................<u>Rama Mantra</u>................................</string>
+    <string name="brahma_mantra" translatable="false"><u>Brahma Mantra</u>.............................<u>Brahma Mantra</u>.........................</string>
+    <string name="vishnu_mantra" translatable="false"><u>Vishnu Mantra</u>...............................<u>Vishnu Mantra</u>........................</string>
+    <string name="shiva_mantras" translatable="false"><u>Shiva Mantras</u>.....................................<u>Shiva Mantras</u>...................</string>
+    <string name="ganesha_mantra" translatable="false"><u>Ganesha Mantra</u>....................................<u>Ganesha Mantra</u>.................</string>
+    <string name="hanumaan_mantra" translatable="false"><u>Hanumaan Mantra</u>...................................<u>Hanumaan Mantra</u>................</string>
+    <string name="h1" translatable="true">Om Hanumate Namah</string>
+    <string name="h2">Om Namo Bhagvate Aanjaneyaay Mahaabalaay Swaahaa</string>
+    <string name="h3">Aum Aeem Bhreem Hanumate Shree Ram Dootaaya Namaha</string>
+    <string name="h4">!! Om Shree Vajradehaya Ramabhaktaya Vayuputhraya Namosthuthe !!</string>
+    <string name="h5">“ !! Om Anjaneyaya Vidmahe Vayuputraya Dhimahi, Tanno Hanumat Prachodayat !!”</string>
+    <string name="b1">gururbrahmā gururviṣṇuḥ gururdevo maheśvaraḥ . guruḥ sākṣāt parabrahma tasmai śrī gurave namaḥ ..</string>
+    <string name="b2">sadyojātaṁ prapadyāmi sadyojātāya vai namo namaḥ bhave bhave nāti bhave bhavasva māṁ bhavodbhavāya namaḥ</string>
+    <string name="b3">īśāna sarvavidyānāmīśvaraḥ sarvabhūtānāṁ brahmādipati brahmaṇo’dhipatir brahmā śivo me astu sa eva sadāśiva om</string>
+    <string name="g1">Om Gam Ganapathaye namo namaha Shree Siddhi Vinayaka namo namaha Ashta Vinayaka namo namahaGanapathi bappa morya</string>
+    <string name="g2">Gananam tva Ganapatim (Gum) havamahe kavim kaveenaam upama-shravastamam Jyeshta raajam Brahmanaam Brahmanaspata Aa nah shrunvann-uthibhi seeda-saadanam</string>
+    <string name="g3">Om ekadantaya vidmahe vakratundaya dheemahi Tanno danti prachodayat\n</string>
+    <string name="g4">Gauri nandana gajanana Girija nandana niranjana Parvati nandana shubhaanana Paahi prabho maam paahi prasanna\n</string>
+    <string name="g5">Gaurinandana Gajanana Girijanandana Niranjana Paarvati Nandana Shubhaanana Paahiprabhomaam Pahi Prasanna</string>
+    <string name="g6">Om Shreem Gam Saubhagya Ganpataye। Varvarda Sarvajanma Mein Vashamanya Namah</string>
+    <string name="k1">Aum Devkinandanaye Vidmahe Vasudevaye Dhi-Mahi Tan No Krishna Prachodayat Aum</string>
+    <string name="k2">Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare Hare Rama, Hare Rama, Rama Rama, Hare Hare</string>
+    <string name="k3">Om Sri Krishnah sharanam mamah</string>
+    <string name="r1">Om Shri Ramaya Namah॥</string>
+    <string name="r2">Om Dasharathaye Vidmahe Sitavallabhaya Dhimahi, Tanno Rama Prachodayat॥</string>
+    <string name="r3">Om Apadamapahartaram Dataram Sarvasampadam। Lokabhiramam Shriramam Bhuyo-Bhuyo Namamyaham॥</string>
+    <string name="s1">Om Namah Shivaay!</string>
+    <string name="s2">Om Tatpurushaya Vidmahe Mahadevaya Dhimahi, Tanno Rudrah Prachodayat !</string>
+    <string name="s3">"Om tryambakam yajamahe sugandhim puṣṭi-vardhanam ǀ urvarukam-iva bandhanān mṛtyormukṣīya māmṛitāt ǁ "</string>
+    <string name="s4">Om Namo Bhagavate Rudraya</string>
+    <string name="s5">Karcharankritam Vaa Kaayjam Karmjam Vaa Shravannayanjam Vaa Maansam Vaa Paradham Vihitam Vihitam Vaa Sarv Metat Kshamasva Jay Jay Karunaabdhe Shree Mahadev Shambho</string>
+    <string name="v1">Om Namo Bhagavate Vasudevaya Namah</string>
+    <string name="v2">Om shreem krishnaya shreem shreem shreem govindaya gopalaya goloka sundaraya sathyaya nithyaya paramathmane paraya vykhanasaya vyrajamoorthaye meghathmane shreem narasimhavapushe namah</string>
+    <string name="v3">shaanta-kaaram bhujaga-shayanam padma-naabham suresham vishwa-dhaaram gagana-sadrisham megha-varanam shubhaangam.lakshmi-kaantam kamala-nayanam yogi-bhi-dhyaana-agamyam vande vishnum bhava-bhaya-haram sarva-lokaika- naatham</string>
+    <string name="m1">Hey! Lord Shiva, I bow to you. I bow to the peaceful one who is the embodiment of the entire universe.</string>
+    <string name="m2">I pray to the mightiest of the Gods, the ideal Purusha, Mahadev.I pray to God to bless me with the intellect and illuminate my path with the light of knowledge.</string>
+    <string name="m3">O three-eyed Lord, One who can see everything that what others cannot see. Hey, god of gods,I invite you to come and bless me with good vasanas. And when my final time comes to depart this world (The time of death), I would want to leave my body without any hesitations of leaving worldly attachments.</string>
+    <string name="m4">I bow to the holy one, to the Rudra i.e. Lord Shiva.</string>
+    <string name="m5">Oh lord of mercy, Please forgive all my sins performed consciously or unconsciously.I request you to pardon the sinful actions committed by my hands and feet, or produced by my words spoken or deeds done. Please pardon the sinful acts committed by my senses like ears and eyes or sinful thoughts that entered my mind. Please forgive me for all sins committed while performing my duties as well as the action not explicitly prescribed. Please forgive me for all my sins. Victory to you, Mahadev, Shambho, you are the ocean of compassion</string>
+    <string name="si1">Also called the ‘Panchakshari Shiva Strota’, this is the most common and mool (basic) mantra of Lord Shiva, who is the supreme god here. This mantra is used for protection and security. Being the simplest one, this mantra is can be chanted anytime and anywhere, while performing Rudrabhishek or any other ritual related to Lord Shiva.</string>
+    <string name="si2">As per Hindu mythology, the Shiva Gayatri Mantra is believed to be very powerful. This sacred mantra can be chanted daily in the morning time. This mantra pleases Lord Shiva and is believed to have the power to fulfil all your wishes and give you peace of mind.</string>
+    <string name="si3">This is a very powerful mantra and sacred mantra.Being a very sacred mantra, it cannot be chanted anytime. ‘Mrityunjaya’ means  victory over the death This has a very specific significance. This mantra is used for a person, who wants to remove the fear of untimely death and overcome other forms of physical suffering. In such cases, it is very powerful and useful.</string>
+    <string name="si4">Rudra is one of the ancient forms of Lord Shiva. The word “Rudra’ comes from the Sanskrit language and means ‘the wild one’. Lord Shiva in his Rudra form was the god of the storm and had a fiery face.The Rudra Gayatri mantra is very useful and powerful to fulfill your desires.Mantra is the best way to please Lord Shiva and get his blessings. By chanting this mantra, you get Rudra’s blessing.</string>
+    <string name="si5">This shloka is a bedtime prayer to God that seeks forgiveness from Lord Shiva for any sin that you may have done along the course of work and life, knowingly or unknowingly. By your grace, we have completed one more day of our life. So, in order to thank Lord Shiva, who is the lord of mercy and compassion, and ask for his mercy.</string>
+    <string name="sh1">Mantra for protection and security </string>
+    <string name="sh2">Mantra to please Lord Shiva </string>
+    <string name="sh3">Mantra to remove the fear of death </string>
+    <string name="sh4">Mantra to get Rudra’s blessing </string>
+    <string name="sh5">Mantra to seek forgiveness from Lord Shiva for any sin </string>
+
 </resources>

@@ -1,9 +1,18 @@
 package com.example.shlokmantraapp;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,19 +37,9 @@ public class VishnuActivity extends AppCompatActivity {
         t1=findViewById(R.id.textView5);
         t2=findViewById(R.id.textView6);
         t3=findViewById(R.id.textView7);
-        t1.setText("Om Namo Bhagavate Vasudevaya Namah");
-        t2.setText("Om shreem krishnaya shreem\n" +
-                "shreem shreem govindaya gopalaya goloka\n" +
-                "sundaraya sathyaya nithyaya paramathmane paraya\n" +
-                "vykhanasaya vyrajamoorthaye\n" +
-                "meghathmane shreem narasimhavapushe namah");
-        t3.setText("shaanta-kaaram bhujaga-shayanam padma-naabham\n" +
-                "suresham\n" +
-                "vishwa-dhaaram gagana-sadrisham megha-varanam\n" +
-                "shubhaangam.\n" +
-                "lakshmi-kaantam kamala-nayanam yogi-bhi-dhyaana-\n" +
-                "agamyam\n" +
-                "vande vishnum bhava-bhaya-haram sarva-lokaika- naatham");
+        t1.setText(R.string.v1);
+        t2.setText(R.string.v2);
+        t3.setText(R.string.v3);
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,4 +68,48 @@ public class VishnuActivity extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater=getMenuInflater();
+        menuInflater.inflate(R.menu.hindi,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==R.id.hi){
+            ShowLang();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void ShowLang() {
+        final String [] list={"Hindi","English"};
+        AlertDialog.Builder mbuild=new AlertDialog.Builder(VishnuActivity.this);
+        mbuild.setTitle("Choose Language ...");
+        mbuild.setSingleChoiceItems(list, -1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int i) {
+                if(i==0)
+                {  setLocale("hi");recreate();}
+                else if(i==1)
+                { setLocale("en");recreate();} }});
+        AlertDialog md=mbuild.create();
+        md.show();
+    }
+
+    private void setLocale(String hi) {
+        Locale locale=new Locale(hi);
+        Locale.setDefault(locale);
+        Configuration configuration=new Configuration();
+        configuration.locale=locale;
+        getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
+        SharedPreferences.Editor editor=getSharedPreferences("settings",MODE_PRIVATE).edit();
+        editor.putString("lang",hi);
+        editor.apply();
+    }
+    public void loadLocale(){
+        SharedPreferences preferences=getSharedPreferences("settings", Activity.MODE_PRIVATE);
+        String lang=preferences.getString("lang","");
+        setLocale(lang); }
 }

@@ -1,10 +1,19 @@
 package com.example.shlokmantraapp;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -49,26 +58,16 @@ ImageView imageView;
         });
         switch (s){
             case "s0":
-                textView.setText("Om Namah Shivaay!");
+                textView.setText(R.string.s1);
                 break;
             case "s1":
-                textView.setText("Om Tatpurushaya Vidmahe Mahadevaya Dhimahi,\n" +
-                        "\n" +
-                        "Tanno Rudrah Prachodayat !");break;
+                textView.setText(R.string.s2);break;
             case "s2":
-                textView.setText("Om tryambakam yajamahe sugandhim puṣṭi-vardhanam ǀ\n" +
-                        "\n" +
-                        "urvarukam-iva bandhanān mṛtyormukṣīya māmṛitāt ǁ ");break;
+                textView.setText(R.string.s3);break;
             case "s3":
-                textView.setText("Om Namo Bhagavate Rudraya");break;
+                textView.setText(R.string.s4);break;
             case "s4":
-                textView.setText("Karcharankritam Vaa Kaayjam Karmjam Vaa\n" +
-                        "\n" +
-                        "Shravannayanjam Vaa Maansam Vaa Paradham\n" +
-                        "\n" +
-                        "Vihitam Vihitam Vaa Sarv Metat Kshamasva\n" +
-                        "\n" +
-                        "Jay Jay Karunaabdhe Shree Mahadev Shambho");break;
+                textView.setText(R.string.s5);break;
 
         }
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -79,4 +78,48 @@ ImageView imageView;
             }
         });
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater=getMenuInflater();
+        menuInflater.inflate(R.menu.hindi,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==R.id.hi){
+            ShowLang();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void ShowLang() {
+        final String [] list={"Hindi","English"};
+        AlertDialog.Builder mbuild=new AlertDialog.Builder(ShlokActivity.this);
+        mbuild.setTitle("Choose Language ...");
+        mbuild.setSingleChoiceItems(list, -1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int i) {
+                if(i==0)
+                {  setLocale("hi");recreate();}
+                else if(i==1)
+                { setLocale("en");recreate();} }});
+        AlertDialog md=mbuild.create();
+        md.show();
+    }
+
+    private void setLocale(String hi) {
+        Locale locale=new Locale(hi);
+        Locale.setDefault(locale);
+        Configuration configuration=new Configuration();
+        configuration.locale=locale;
+        getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
+        SharedPreferences.Editor editor=getSharedPreferences("settings",MODE_PRIVATE).edit();
+        editor.putString("lang",hi);
+        editor.apply();
+    }
+    public void loadLocale(){
+        SharedPreferences preferences=getSharedPreferences("settings", Activity.MODE_PRIVATE);
+        String lang=preferences.getString("lang","");
+        setLocale(lang); }
 }

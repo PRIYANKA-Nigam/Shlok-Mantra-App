@@ -1,9 +1,18 @@
 package com.example.shlokmantraapp;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,16 +37,9 @@ TextView t1,t2,t3,t4;
         t1=findViewById(R.id.textView5);
         t2=findViewById(R.id.textView6);
         t3=findViewById(R.id.textView7);
-        t1.setText("Aum\n" +
-                "Devkinandanaye Vidmahe\n" +
-                "Vasudevaye Dhi-Mahi\n" +
-                "Tan No Krishna Prachodayat\n" +
-                "Aum");
-        t2.setText("Hare Krishna, Hare Krishna,\n" +
-                "Krishna Krishna, Hare Hare\n" +
-                "Hare Rama, Hare Rama,\n" +
-                "Rama Rama, Hare Hare");
-        t3.setText("Om Sri Krishnah sharanam mamah");
+        t1.setText(R.string.k1);
+        t2.setText(R.string.k2);
+        t3.setText(R.string.k3);
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,5 +68,48 @@ TextView t1,t2,t3,t4;
             }
         });
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater=getMenuInflater();
+        menuInflater.inflate(R.menu.hindi,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==R.id.hi){
+            ShowLang();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void ShowLang() {
+        final String [] list={"Hindi","English"};
+        AlertDialog.Builder mbuild=new AlertDialog.Builder(KrishnaActivity.this);
+        mbuild.setTitle("Choose Language ...");
+        mbuild.setSingleChoiceItems(list, -1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int i) {
+                if(i==0)
+                {  setLocale("hi");recreate();}
+                else if(i==1)
+                { setLocale("en");recreate();} }});
+        AlertDialog md=mbuild.create();
+        md.show();
+    }
+
+    private void setLocale(String hi) {
+        Locale locale=new Locale(hi);
+        Locale.setDefault(locale);
+        Configuration configuration=new Configuration();
+        configuration.locale=locale;
+        getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
+        SharedPreferences.Editor editor=getSharedPreferences("settings",MODE_PRIVATE).edit();
+        editor.putString("lang",hi);
+        editor.apply();
+    }
+    public void loadLocale(){
+        SharedPreferences preferences=getSharedPreferences("settings", Activity.MODE_PRIVATE);
+        String lang=preferences.getString("lang","");
+        setLocale(lang); }
 }

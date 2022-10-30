@@ -1,12 +1,21 @@
 package com.example.shlokmantraapp;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -38,26 +47,12 @@ public class GaneshaActivity extends AppCompatActivity {
         });
 
         mainModels=new ArrayList<>();
-        mainModels.add(new MainModel(R.drawable.one,"Om Gam Ganapathaye namo namaha\n" +
-                "Shree Siddhi Vinayaka namo namaha\n" +
-                "Ashta Vinayaka namo namaha\n" +
-                "Ganapathi bappa morya"));
-        mainModels.add(new MainModel(R.drawable.two,"Gananam tva Ganapatim (Gum) havamahe\n" +
-                "kavim kaveenaam upama-shravastamam\n" +
-                "Jyeshta raajam Brahmanaam Brahmanaspata\n" +
-                "Aa nah shrunvann-uthibhi seeda-saadanam"));
-        mainModels.add(new MainModel(R.drawable.three, "Om ekadantaya vidmahe vakratundaya dheemahi\n" +
-                "Tanno danti prachodayat\n"));
-        mainModels.add(new MainModel(R.drawable.four,"Gauri nandana gajanana\n" +
-                "Girija nandana niranjana\n" +
-                "Parvati nandana shubhaanana\n" +
-                "Paahi prabho maam paahi prasanna\n"));
-        mainModels.add(new MainModel(R.drawable.five,"Gaurinandana Gajanana\n" +
-                "Girijanandana Niranjana\n" +
-                "Paarvati Nandana Shubhaanana\n" +
-                "Paahiprabhomaam Pahi Prasanna"));
-        mainModels.add(new MainModel(R.drawable.six, "Om Shreem Gam Saubhagya Ganpataye।\n" +
-                "Varvarda Sarvajanma Mein Vashamanya Namah"));
+        mainModels.add(new MainModel(R.drawable.one,getString(R.string.g1)));
+        mainModels.add(new MainModel(R.drawable.two,getString(R.string.g2)));
+        mainModels.add(new MainModel(R.drawable.three, getString(R.string.g3)));
+        mainModels.add(new MainModel(R.drawable.four,getString(R.string.g4)));
+        mainModels.add(new MainModel(R.drawable.five,getString(R.string.g5)));
+        mainModels.add(new MainModel(R.drawable.six, getString(R.string.g6)));
 //        for(int i=0;i<num.length;i++) {
 //            MainModel mainModel = new MainModel(num[i], shlok[i]);
 //            this.mainModels.add(mainModel);
@@ -76,4 +71,48 @@ adapter=new GaneshaAdapter(this,mainModels);
             }
         });
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater=getMenuInflater();
+        menuInflater.inflate(R.menu.hindi,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==R.id.hi){
+            ShowLang();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void ShowLang() {
+        final String [] list={"Hindi","English"};
+        AlertDialog.Builder mbuild=new AlertDialog.Builder(GaneshaActivity.this);
+        mbuild.setTitle("Choose Language ...");
+        mbuild.setSingleChoiceItems(list, -1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int i) {
+                if(i==0)
+                {  setLocale("hi");recreate();}
+                else if(i==1)
+                { setLocale("en");recreate();} }});
+        AlertDialog md=mbuild.create();
+        md.show();
+    }
+
+    private void setLocale(String hi) {
+        Locale locale=new Locale(hi);
+        Locale.setDefault(locale);
+        Configuration configuration=new Configuration();
+        configuration.locale=locale;
+        getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
+        SharedPreferences.Editor editor=getSharedPreferences("settings",MODE_PRIVATE).edit();
+        editor.putString("lang",hi);
+        editor.apply();
+    }
+    public void loadLocale(){
+        SharedPreferences preferences=getSharedPreferences("settings", Activity.MODE_PRIVATE);
+        String lang=preferences.getString("lang","");
+        setLocale(lang); }
 }
