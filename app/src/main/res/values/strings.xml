@@ -90,5 +90,26 @@
     <string name="lkm">Om Shanmukhaya Namah||</string>
     <string name="lgm">Om Ganeshaye Namah||</string>
     <string name="scm">Om Somaya Namah||</string>
+    <string name="textview" translatable="false"><u>TextView</u></string>
+    <string name="saraswati_mantra" translatable="false"><u>Saraswati Mantra</u>.........................<u>Saraswati Mantra</u>...........................</string>
+    <string name="sl1">Saraswati Namasthubhyam Varade Kamarupini Vidhyarambam Karishyami Siddhir Bavathume Sadha</string>
+    <string name="sl2">Om Aing Maha Saraswatyai Namah</string>
+    <string name="sl3">Om Vageeshwaryae Vidmahe Vagwadeenyae Dhimahe Tannah Saraswati Prachodayat</string>
+    <string name="sl4">Om Aing Hreeng Shreeng Vaagdevyai Saraswatyai Namah</string>
+    <string name="sl5">Maho Arnah Saraswati Pracheyati Ketuna,Dhiyo Vishwa Virajati</string>
+    <string name="kali_mantra" translatable="false"><u>Kali Mantra</u>................<u>Kali Mantra</u>................</string>
+    <string name="kl1">Kreem</string>
+    <string name="kl2">Om Kring Kalikaye Namah</string>
+    <string name="kl3">Om Klim Kalika-Yei Namaha</string>
+    <string name="kl4">Om Hrim Shreem Klim Adya Kalika Param Eshwari Swaha</string>
+    <string name="kat1">To protect from all the evil forces</string>
+    <string name="kat2">To transforms the devotee to pure consciousness</string>
+    <string name="kat3">To bring relief from all kinds of problems</string>
+    <string name="kat4">To bring rapid growth to one’s spirituality</string>
+    <string name="sat1">To improve memory,concentration in studies</string>
+    <string name="sat2">Salutations to Goddess Maha Saraswati</string>
+    <string name="sat3">For Success in Education and Career</string>
+    <string name="sat4">For Enhancing Intelligence</string>
+    <string name="sat5">To illuminate the minds of knowledge seekers</string>
 
 </resources>

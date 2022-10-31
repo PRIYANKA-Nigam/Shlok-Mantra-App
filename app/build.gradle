@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.shlokmantraapp"
-        minSdkVersion 28
+        minSdkVersion 19
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"
@@ -34,6 +34,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.6.0'
     implementation 'com.android.support:design:31.0.0'
     implementation 'com.google.android.material:material:1.2.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
 //    implementation 'androidx.appcompat:appcompat:1.5.1'
 //    implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'

@@ -32,7 +32,7 @@ public class DurgaActivity extends AppCompatActivity {
         t3=(TextView)findViewById(R.id.textView7);
         textView=findViewById(R.id.textView2);
         textView.setSelected(true);
-        Animation animation = AnimationUtils.loadAnimation(this,R.anim.anim);
+        Animation animation = AnimationUtils.loadAnimation(this,R.anim.anim1);
         t1.startAnimation(animation);
         t2.startAnimation(animation);
         t3.startAnimation(animation);

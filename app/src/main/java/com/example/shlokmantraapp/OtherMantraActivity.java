@@ -14,6 +14,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +31,7 @@ ImageView imageView;
         setContentView(R.layout.activity_other_mantra);
         t1=findViewById(R.id.textView11); t1.setSelected(true);
         t2=findViewById(R.id.textView12);
+      startAnimation();
         imageView=findViewById(R.id.imageView5);
         textToSpeech=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
@@ -85,6 +88,12 @@ ImageView imageView;
             }
         });
     }
+
+    private void startAnimation() {
+        Animation animation = AnimationUtils.loadAnimation(this,R.anim.anim2);
+          t2.startAnimation(animation);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater=getMenuInflater();

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     android:background="@android:color/holo_orange_dark"
     tools:context=".GoddessShlokActivity">
 
@@ -25,7 +26,12 @@
         android:textStyle="bold"
         android:textSize="45dp"
         android:gravity="center"/>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="80dp"/>
+    />
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
@@ -35,7 +41,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="12dp"
         android:layout_marginTop="189dp"
-        android:background="@drawable/triangle"
+        android:background="@drawable/rectangle"
         android:text="TextView"
         android:textSize="25dp"
         android:textStyle="bold" />
@@ -48,5 +54,5 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="117dp"
         android:layout_marginEnd="21dp"
-        app:srcCompat="@drawable/hear" />
+        android:src="@drawable/hear" />
 </RelativeLayout>

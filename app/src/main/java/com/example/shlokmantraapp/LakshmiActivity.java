@@ -32,7 +32,7 @@ String flag="";
         t2=(TextView)findViewById(R.id.textView6);
         t3=(TextView)findViewById(R.id.textView7);
         t4=(TextView)findViewById(R.id.textView8);
-        Animation animation = AnimationUtils.loadAnimation(this,R.anim.anim);
+        Animation animation = AnimationUtils.loadAnimation(this,R.anim.anim1);
         t1.startAnimation(animation);
         t2.startAnimation(animation);
         t3.startAnimation(animation);

@@ -4,8 +4,8 @@
     <rotate android:fromDegrees="0"
            android:toDegrees="360"
           android:duration="10000"
-        android:pivotX="50%"
-        android:pivotY="50%"
+        android:pivotX="1%"
+        android:pivotY="1%"
         android:repeatCount="infinite"/>
 
 </set>

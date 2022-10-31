@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
-    >
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
-        <rotate android:pivotY="-37%"
-              android:pivotX="150%"
-            android:fromDegrees="10"
-            android:toDegrees="15">
-
-    <shape android:shape="rectangle">
-    <solid android:color="#ffffff"/>
-    <size android:width="660dp"
-        android:height="660dp"/>
-    <stroke android:width="4dp"
-        android:color="@android:color/black"/>
-</shape>
-</rotate>
+        <rotate android:fromDegrees="-45"
+                android:toDegrees="45"
+                  android:pivotX="0%"
+            android:pivotY="1%" >
+            <shape android:shape="rectangle">
+                <stroke android:width="15dp"
+                       android:color="#00000000"/>
+                <solid android:color="#000000"/>
+            </shape>
+        </rotate>
     </item>
+
 </layer-list>
