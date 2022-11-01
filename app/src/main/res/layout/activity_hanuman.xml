@@ -46,6 +46,5 @@
         android:layout_marginBottom="15dp"
         android:divider="#FFFFFF"
         android:dividerHeight="10dp"
-
         android:showDividers="beginning|middle|end" />
 </RelativeLayout>

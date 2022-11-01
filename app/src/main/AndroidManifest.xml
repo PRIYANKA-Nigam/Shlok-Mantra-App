@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shlokmantraapp">
-
+<uses-permission android:name="android.permission.SET_WALLPAPER"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShlokMantraApp">
-        <activity android:name=".OtherMantraActivity"></activity>
+        <activity android:name=".SetWallpaper2Activity"></activity>
+        <activity android:name=".RateUsActivity" />
+        <activity android:name=".SetWallpaperActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShaniShlokActivity" />
+        <activity android:name=".SantoshiActivity" />
+        <activity android:name=".ShaniActivity" />
+        <activity android:name=".OtherMantraActivity" />
         <activity android:name=".GoddessShlokActivity" />
         <activity
             android:name=".SignificanceActivity"
@@ -31,13 +45,7 @@
         <activity android:name=".GaneshaActivity" />
         <activity android:name=".ShivaActivity" />
         <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

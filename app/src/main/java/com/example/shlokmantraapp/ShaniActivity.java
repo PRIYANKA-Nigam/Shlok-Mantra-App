@@ -3,53 +3,58 @@ package com.example.shlokmantraapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.app.Activity;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class ShivaActivity extends AppCompatActivity {
-     RecyclerView recyclerView;
-    ArrayList<MainModel> mainModels;
-    MainAdapter mainAdapter;
-    TextView textView;
+public class ShaniActivity extends AppCompatActivity {
+    ListView listView; TextView textView;
+    ArrayList<String> arrayList;
+    ArrayAdapter<String> adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shiva);
-        recyclerView=(RecyclerView)findViewById(R.id.rec);
+        setContentView(R.layout.activity_shani);
+        String s=getIntent().getStringExtra("flag");
+
         textView=findViewById(R.id.textView2);
         textView.setSelected(true);
-        Integer[] num={R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,R.drawable.five};
-        String[] shlok={getString(R.string.sh1),getString(R.string.sh2),getString(R.string.sh3),
-                getString(R.string.sh4),getString(R.string.sh5) };
+        listView=findViewById(R.id.ll);
+        arrayList=new ArrayList<>();
+         arrayList.add(getString(R.string.shani1));
+         arrayList.add(getString(R.string.shani2));
+         arrayList.add(getString(R.string.shani3));
+         arrayList.add(getString(R.string.shani4));
+         arrayList.add(getString(R.string.shani5));
+        adapter=new ArrayAdapter<>(this,R.layout.names,arrayList);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent=new Intent(ShaniActivity.this,ShaniShlokActivity.class);
+                String flag="sh"+i;
+                intent.putExtra("flag",flag);
+                startActivity(intent);
 
-        mainModels=new ArrayList<>();
-        for(int i=0;i<num.length;i++){
-            MainModel mainModel=new MainModel(num[i],shlok[i]);
-            this.mainModels.add(mainModel);
-        }
-     //   RecyclerView.LayoutManager layoutManager=new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL); to get items in rowwise in 2 colums
-        RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(ShivaActivity.this);
-        recyclerView.setLayoutManager(layoutManager);
-      //  recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.addItemDecoration(new DividerItemDecoration(getApplicationContext(),DividerItemDecoration.VERTICAL)); //to set divider among items
-        mainAdapter=new MainAdapter(ShivaActivity.this,mainModels);
-        recyclerView.setAdapter(mainAdapter);
+            }
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -68,7 +73,7 @@ public class ShivaActivity extends AppCompatActivity {
 
     private void ShowLang() {
         final String [] list={"Hindi","English"};
-        AlertDialog.Builder mbuild=new AlertDialog.Builder(ShivaActivity.this);
+        AlertDialog.Builder mbuild=new AlertDialog.Builder(ShaniActivity.this);
         mbuild.setTitle("Choose Language ...");
         mbuild.setSingleChoiceItems(list, -1, new DialogInterface.OnClickListener() {
             @Override

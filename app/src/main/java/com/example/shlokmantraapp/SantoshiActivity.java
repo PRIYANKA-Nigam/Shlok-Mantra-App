@@ -3,7 +3,6 @@ package com.example.shlokmantraapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,42 +13,65 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class ShivaActivity extends AppCompatActivity {
-     RecyclerView recyclerView;
-    ArrayList<MainModel> mainModels;
-    MainAdapter mainAdapter;
+public class SantoshiActivity extends AppCompatActivity {
     TextView textView;
+    TextToSpeech textToSpeech;
+    ArrayList<MainModel> mainModels;
+    GaneshaAdapter adapter;
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shiva);
-        recyclerView=(RecyclerView)findViewById(R.id.rec);
+        setContentView(R.layout.activity_santoshi);
         textView=findViewById(R.id.textView2);
         textView.setSelected(true);
-        Integer[] num={R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,R.drawable.five};
-        String[] shlok={getString(R.string.sh1),getString(R.string.sh2),getString(R.string.sh3),
-                getString(R.string.sh4),getString(R.string.sh5) };
+        listView=findViewById(R.id.ll);
+        textToSpeech=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if (status==TextToSpeech.SUCCESS){ int lang=textToSpeech.setLanguage(Locale.ENGLISH); }
+            }
+        });
 
         mainModels=new ArrayList<>();
-        for(int i=0;i<num.length;i++){
-            MainModel mainModel=new MainModel(num[i],shlok[i]);
+        Integer[] num = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four, R.drawable.five, R.drawable.six, R.drawable.seven};
+        String[] shlok = {getString(R.string.sant1),
+                getString(R.string.sant2)
+                , getString(R.string.sant3), getString(R.string.sant4),
+                getString(R.string.sant5), getString(R.string.sant6), getString(R.string.sant7), getString(R.string.sant8)};
+
+        mainModels = new ArrayList<>();
+        for (int i = 0; i < num.length; i++) {
+            MainModel mainModel = new MainModel(num[i], shlok[i]);
             this.mainModels.add(mainModel);
         }
-     //   RecyclerView.LayoutManager layoutManager=new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL); to get items in rowwise in 2 colums
-        RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(ShivaActivity.this);
-        recyclerView.setLayoutManager(layoutManager);
-      //  recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.addItemDecoration(new DividerItemDecoration(getApplicationContext(),DividerItemDecoration.VERTICAL)); //to set divider among items
-        mainAdapter=new MainAdapter(ShivaActivity.this,mainModels);
-        recyclerView.setAdapter(mainAdapter);
+        adapter=new GaneshaAdapter(this,mainModels);
+        adapter.notifyDataSetChanged();
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                MainModel model = (MainModel) listView.getItemAtPosition(i);
+                String p=model.getText();
+                //  String p= (String) listView.getItemAtPosition(i);  java.lang.ClassCastException:
+                int speech =textToSpeech.speak(p,TextToSpeech.QUEUE_FLUSH,null);
+                Toast.makeText(SantoshiActivity.this,"Reading for you ...",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -68,7 +90,7 @@ public class ShivaActivity extends AppCompatActivity {
 
     private void ShowLang() {
         final String [] list={"Hindi","English"};
-        AlertDialog.Builder mbuild=new AlertDialog.Builder(ShivaActivity.this);
+        AlertDialog.Builder mbuild=new AlertDialog.Builder(SantoshiActivity.this);
         mbuild.setTitle("Choose Language ...");
         mbuild.setSingleChoiceItems(list, -1, new DialogInterface.OnClickListener() {
             @Override

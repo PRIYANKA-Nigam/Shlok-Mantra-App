@@ -36,13 +36,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         holder.child.setHasFixedSize(true);
         ArrayList<String> dayarrayList = new ArrayList<>();
         if (parentArrayList.get(position).equals("God Mantra")){
-            String[] days={"Lord Shiva","Lord Ganesh","Lord Hanumaan","Lord Ram","Lord Krishna","Lord Brahma","Lord Vishnu"};
+            String[] days={"Lord Shiva","Lord Ganesh","Lord Hanumaan","Lord Ram","Lord Krishna","Lord Brahma","Lord Vishnu","Shani Dev"};
             for (int i=0;i<days.length;i++){
                 dayarrayList.add(days[i]);
             }
         }
         if(parentArrayList.get(position).equals("Goddess Mantra")){
-            String[] days={"Goddess Lakshmi","Goddess Saraswati","Goddess Kali","Goddess Durga","Goddess Gayatri"};
+            String[] days={"Goddess Lakshmi","Goddess Saraswati","Goddess Kali","Goddess Durga","Goddess Gayatri","Goddess Santoshi"};
             for (int i=0;i<days.length;i++){
                 dayarrayList.add(days[i]);
             }

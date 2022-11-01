@@ -19,6 +19,12 @@ ImageView imageView; Button button;
         textView=findViewById(R.id.textView);
         button=findViewById(R.id.button);
         imageView=findViewById(R.id.imageView);
+//        getSupportActionBar().hide();
+//        getSupportActionBar().setTitle("full screen image");
+//        Intent intent=getIntent();
+//        int position=intent.getExtras().getInt("id");
+//        Image image=new Image(this);
+//        imageView.setImageResource(image.img[position]);
         String s= getIntent().getStringExtra("name");
         textView.setText(s);
         if(s.equalsIgnoreCase("Lord Shiva")){
@@ -337,6 +343,30 @@ ImageView imageView; Button button;
                 @Override
                 public void onClick(View view) {
                     Intent intent=new Intent(MainActivity2.this,OtherMantraActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Shani Dev")){
+            imageView.setImageResource(R.drawable.shani_dev);
+            String flag="shani";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,ShaniActivity.class);
+                    intent.putExtra("flag",flag);
+                    startActivity(intent);
+                }
+            });
+        }
+        if (s.equalsIgnoreCase("Goddess Santoshi")){
+            imageView.setImageResource(R.drawable.santoshi);
+            String flag="santoshi";
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(MainActivity2.this,SantoshiActivity.class);
                     intent.putExtra("flag",flag);
                     startActivity(intent);
                 }

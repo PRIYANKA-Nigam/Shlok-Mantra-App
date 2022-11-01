@@ -111,5 +111,31 @@
     <string name="sat3">For Success in Education and Career</string>
     <string name="sat4">For Enhancing Intelligence</string>
     <string name="sat5">To illuminate the minds of knowledge seekers</string>
-
+    <string name="shani_dev_mantra" translatable="false"><u>Shani Dev Mantra</u>...............<u>Shani Dev Mantra</u>..................</string>
+    <string name="ssa1">Om Shri Shani Devaayah Namo Namh Om Shri Shani Devaayah Shanti Bhavah Om Shri Shani Devaayah Shubham Falh Om Shri Shani Devaayah Falh Prapti Falh</string>
+    <string name="sma1">SaIutation to the Lord Shani who bestows upon one the peace, success and prosperity of one’s life</string>
+    <string name="ssa2">Nilanjana samabhasam raviputram yamagrajam.Chaya martanda sambhutam tam namami shaishcharam</string>
+    <string name="sma2">Looking like a blue cloud, the sun of the Sun, he is the foremost of those who control. He can even put his shadow over the glorious sun. To that Saturn, the emblem of control, we bow down in devotion</string>
+    <string name="ssa3">Om praam preem praum sah shanayishraya namah</string>
+    <string name="sma3">Ode to Lord Shani to be in my favour and calm my senses</string>
+    <string name="ssa4">Om kaakadhwajaaya vidmahae khadga hastaaya dheemahi tanno mandah prachodayaat</string>
+    <string name="sma4">Om, Let me meditate on him who has crow in his flag, Oh, He who has a sword in his hand, give me higher intellect, And let Saneeswara illuminate my mind.</string>
+    <string name="ssa5">Om Sham Shanaiscaryaye Namah</string>
+    <string name="sma5">SaIutation to the dark Lord of Shanivara</string>
+    <string name="santoshi_mantra" translatable="false"><u>Santoshi Mantra</u>............<u>Santoshi Mantra</u>...............</string>
+    <string name="sant1">Om shri santoshi mahamaye gajanandam dayini shukravar priye devi narayani namostute Maa Santoshi Mahamantra Jai maa santoshye devi namo namah</string>
+    <string name="sant2">Jai maa santoshye devi namo namah</string>
+    <string name="sant3">Shri santoshye devyye namah</string>
+    <string name="sant4">Om shri gajodevoputriyay namah</string>
+    <string name="sant5">Om sarvnivarnaay devibhuta namah</string>
+    <string name="sant6">Om santoshi mahadevvye namah</string>
+    <string name="sant7">Om sarvkaam falpradaaye namah</string>
+    <string name="sant8">Om laliltaaye namah</string>
+    <string name="shlok_mantra" translatable="false"><u><b>Shlok Mantra</b></u></string>
+    <string name="set_wallpaper" translatable="false">Set Wallpaper</string>
+    <string name="shani1">Shani Mantra For Success</string>
+    <string name="shani2">Shani Maha Mantra</string>
+    <string name="shani3">Shani Beej Mantra</string>
+    <string name="shani4">Shani Gayatri Mantra</string>
+    <string name="shani5">Shani Moola Mantra</string>
 </resources>
