@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 public class MenuActivity extends AppCompatActivity {
-LinearLayout layout;
+LinearLayout layout,layout2,layout3,layout4;
 DrawerLayout drawerLayout;
 
     public static void logout(final SetWallpaperActivity mainActivity3) {
@@ -45,11 +45,30 @@ DrawerLayout drawerLayout;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        layout2=findViewById(R.id.lin1);layout3=findViewById(R.id.lin3);layout4=findViewById(R.id.lin4);
         layout=findViewById(R.id.li2);
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
+            }
+        });
+        layout2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ArtiActivity.class));
+            }
+        });
+        layout3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),KathaActivity.class));
+            }
+        });
+        layout4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),ChalisaActivity.class));
             }
         });
         drawerLayout=findViewById(R.id.draw);

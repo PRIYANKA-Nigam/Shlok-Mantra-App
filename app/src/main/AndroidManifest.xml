@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shlokmantraapp">
-<uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShlokMantraApp">
-        <activity android:name=".SetWallpaper2Activity"></activity>
+        <activity android:name=".FinalActivity"></activity>
+        <activity android:name=".ChalisaActivity" />
+        <activity android:name=".KathaActivity" />
+        <activity android:name=".ArtiActivity" />
+        <activity android:name=".SetWallpaper2Activity" />
         <activity android:name=".RateUsActivity" />
         <activity android:name=".SetWallpaperActivity" />
         <activity android:name=".MenuActivity" />
