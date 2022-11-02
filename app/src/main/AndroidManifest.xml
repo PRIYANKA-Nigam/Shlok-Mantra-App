@@ -11,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ShlokMantraApp">
-        <activity android:name=".FinalActivity"></activity>
+        <activity android:name=".FinalChalisaActivity"></activity>
+        <activity android:name=".FinalActivity" />
         <activity android:name=".ChalisaActivity" />
-        <activity android:name=".KathaActivity" />
+        <activity android:name=".DeityPlaceActivity" />
         <activity android:name=".ArtiActivity" />
         <activity android:name=".SetWallpaper2Activity" />
         <activity android:name=".RateUsActivity" />

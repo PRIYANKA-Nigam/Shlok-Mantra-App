@@ -9,14 +9,26 @@
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="match_parent" android:orientation="vertical">
     <include layout="@layout/main_toolbar" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:gravity="center"
+            android:text="Do You like our App?\nPlease rate the App..."
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="201dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="RATE NOW"
+            android:textSize="25dp"
+            android:textStyle="bold" />
     </LinearLayout>
-    <TextView
-        android:layout_width="50sp"
-        android:layout_height="match_parent"
-        android:text="Rate Us"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="30dp"/>
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"

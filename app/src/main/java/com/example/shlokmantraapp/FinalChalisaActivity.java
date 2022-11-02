@@ -20,13 +20,13 @@ import android.widget.Toast;
 
 import java.util.Locale;
 
-public class FinalActivity extends AppCompatActivity {
-TextView t1,t2;  TextToSpeech textToSpeech;
+public class FinalChalisaActivity extends AppCompatActivity {
+    TextView t1,t2;  TextToSpeech textToSpeech;
     ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_final);
+        setContentView(R.layout.activity_final_chalisa);
         t1=findViewById(R.id.textView16);
         t2=findViewById(R.id.textView17);
         imageView=findViewById(R.id.imageView8);
@@ -36,66 +36,85 @@ TextView t1,t2;  TextToSpeech textToSpeech;
                 if (status==TextToSpeech.SUCCESS){ int lang=textToSpeech.setLanguage(Locale.ENGLISH); }
             }
         });
-
-       try {
-           String s = getIntent().getStringExtra("name");
-           t1.setText(s);
-           switch (s) {
-               case "Maa Lakshmi Arti":
-                   t2.setText(getString(R.string.a));
-                   break;
-               case "Maa Durga Arti":
-                   t2.setText(getString(R.string.b));
-                   break;
-               case "Lord Ganesha Arti":
-                   t2.setText(getString(R.string.c));
-                   break;
-               case "Lord Shiva Arti":
-                   t2.setText(getString(R.string.d));
-                   break;
-               case "Maa Kali Arti":
-                   t2.setText(getString(R.string.e));
-                   break;
-               case "Maa Saraswati Arti":
-                   t2.setText(getString(R.string.f));
-                   break;
-               case "Lord Hanumaan Arti":
-                   t2.setText(getString(R.string.g));
-                   break;
-               case "Lord Rama Arti":
-                   t2.setText(getString(R.string.h));
-                   break;
-               case "Maa Santoshi Arti":
-                   t2.setText(getString(R.string.i));
-                   break;
-               case "Maa Gayatri Arti":
-                   t2.setText(getString(R.string.j));
-                   break;
-               case "Lord Krishna Arti":
-                   t2.setText(getString(R.string.k));
-                   break;
-               case "Lord Vishnu Arti":
-                   t2.setText(getString(R.string.l));
-                   break;
-               case "Lord Brahma Arti":
-                   t2.setText(getString(R.string.m));
-                   break;
-               case "Shani Dev Arti":
-                   t2.setText(getString(R.string.n));
-                   break;
-           }
-       } catch (NullPointerException e){
-           e.printStackTrace();
-       }
+        try {
+            int pos = getIntent().getIntExtra("id", 0);
+            if (pos == 0) {
+                t1.setText("Shiva Chalisa");
+                t2.setText(getString(R.string.o));
+            } else if (pos == 1) {
+                t1.setText("Ganesha Chalisa");
+                t2.setText(getString(R.string.p));
+            } else if (pos == 2) {
+                t1.setText("Hanumaan Chalisa");
+                t2.setText(getString(R.string.q));
+            }
+         else if (pos == 3) {
+            t1.setText("Rama Chalisa");
+            t2.setText(getString(R.string.r));
+        }else if (pos == 4) {
+                t1.setText("Brahma Chalisa");
+                t2.setText(getString(R.string.s));
+            }else if (pos == 5) {
+                t1.setText("Vishnu Chalisa");
+                t2.setText(getString(R.string.t));
+            }else if (pos == 6) {
+                t1.setText("Shani Chalisa");
+                t2.setText(getString(R.string.u));
+            }else if (pos == 7) {
+                t1.setText("Lakshmi Chalisa");
+                t2.setText(getString(R.string.v));
+            }
+            else if (pos == 8) {
+                t1.setText("Durga Chalisa");
+                t2.setText(getString(R.string.w));
+            }
+            else if (pos == 9) {
+                t1.setText("Saraswati Chalisa");
+                t2.setText(getString(R.string.x));
+            }
+            else if (pos == 10) {
+                t1.setText("Kali Chalisa");
+                t2.setText(getString(R.string.y));
+            }else if (pos == 11) {
+                t1.setText("Gayatri Chalisa");
+                t2.setText(getString(R.string.z));
+            }else if (pos == 12) {
+                t1.setText("Santoshi Chalisa");
+                t2.setText(getString(R.string.z1));
+            }
+            else if (pos == 13) {
+                t1.setText("Kuber Chalisa");
+                t2.setText(getString(R.string.z2));
+            }
+            else if (pos == 14) {
+                t1.setText("Karwa ");
+                t2.setText(R.string.karwa);
+            }
+            else if (pos == 15) {
+                t1.setText("Chhath");
+                t2.setText(R.string.chhath);
+            }
+            else if (pos == 16) {
+                t1.setText("Marriage");
+                t2.setText(R.string.wed);
+            }
+            else if (pos == 17) {
+                t1.setText("Studies/Education");
+                t2.setText(R.string.vidya);
+            }
+        }catch (NullPointerException e){
+            e.printStackTrace();
+        }
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String p= t2.getText().toString();
                 int speech =textToSpeech.speak(p,TextToSpeech.QUEUE_FLUSH,null);
-                Toast.makeText(FinalActivity.this,"Reading for you ...",Toast.LENGTH_SHORT).show();
+                Toast.makeText(FinalChalisaActivity.this,"Reading for you ...",Toast.LENGTH_SHORT).show();
             }
         });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater=getMenuInflater();
@@ -113,7 +132,7 @@ TextView t1,t2;  TextToSpeech textToSpeech;
 
     private void ShowLang() {
         final String [] list={"Hindi","English"};
-        AlertDialog.Builder mbuild=new AlertDialog.Builder(FinalActivity.this);
+        AlertDialog.Builder mbuild=new AlertDialog.Builder(FinalChalisaActivity.this);
         mbuild.setTitle("Choose Language ...");
         mbuild.setSingleChoiceItems(list, -1, new DialogInterface.OnClickListener() {
             @Override

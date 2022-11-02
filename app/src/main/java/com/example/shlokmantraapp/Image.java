@@ -15,7 +15,7 @@ public class Image extends BaseAdapter {
             R.drawable.shani_dev,R.drawable.lakshmi,R.drawable.durga,
             R.drawable.saraswati,R.drawable.kali,R.drawable.gayatri,
             R.drawable.santoshi,R.drawable.kuber,R.drawable.karwas,
-            R.drawable.chhath,R.drawable.wed,R.drawable.chhath};
+            R.drawable.chhath,R.drawable.wed,R.drawable.vidya};
     public Image(Context mc) {
         this.mc = mc;
     }

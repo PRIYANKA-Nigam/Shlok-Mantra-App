@@ -62,7 +62,7 @@ DrawerLayout drawerLayout;
         layout3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),KathaActivity.class));
+                startActivity(new Intent(getApplicationContext(), DeityPlaceActivity.class));
             }
         });
         layout4.setOnClickListener(new View.OnClickListener() {
