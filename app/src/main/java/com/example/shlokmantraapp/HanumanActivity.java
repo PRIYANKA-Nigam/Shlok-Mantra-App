@@ -73,6 +73,19 @@ ArrayAdapter<String> adapter;
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==R.id.hi){
             ShowLang();
+        }  else if (item.getItemId()==R.id.dark){
+            startActivity(new Intent(getApplicationContext(),DarkModeActivity.class));
+        }
+        else if (item.getItemId()==R.id.share){
+            String s="Hanuman Mantra : "+getString(R.string.h1)+"\n\n"+getString(R.string.h2)+"\n\n"+getString(R.string.h3)+"\n\n"+
+                    getString(R.string.h4)+"\n\n"+getString(R.string.h5)+"\n\n";
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, " -- " + s);
+            sendIntent.setType("text/plain");
+            Intent shareIntent = Intent.createChooser(sendIntent, null);
+            startActivity(shareIntent);
+            Toast.makeText(getApplicationContext(), "Sharing Mantra ...", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }

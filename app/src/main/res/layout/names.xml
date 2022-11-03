@@ -5,6 +5,10 @@
     android:textSize="35sp"
     android:textStyle="bold"
     android:gravity="left"
+    android:shadowColor="@android:color/holo_orange_light"
+    android:shadowDx="-15"
+    android:shadowDy="-15"
+    android:shadowRadius="13"
     android:textColor="@android:color/black"
     android:background="@android:color/holo_orange_dark">
 

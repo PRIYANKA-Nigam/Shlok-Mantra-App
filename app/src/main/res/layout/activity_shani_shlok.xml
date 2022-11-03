@@ -18,6 +18,10 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:freezesText="true"
+        android:shadowColor="@android:color/holo_green_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:marqueeRepeatLimit="marquee_forever"
         android:scrollHorizontally="true"
         android:singleLine="true"
@@ -49,6 +53,10 @@
                 android:layout_height="match_parent"
                 android:text="Shlok : "
                 android:textSize="25dp"
+                android:shadowColor="@android:color/holo_green_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
                 android:textStyle="bold" />
 
             <TextView
@@ -57,6 +65,10 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/circle"
                 android:gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
                 android:text="text"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -72,6 +84,10 @@
                 android:layout_height="match_parent"
                 android:text="Meaning : "
                 android:textSize="25dp"
+                android:shadowColor="@android:color/holo_green_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
                 android:textStyle="bold" />
 
             <TextView
@@ -80,6 +96,10 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/circle"
                 android:gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
                 android:text="text"
                 android:textSize="20dp"
                 android:textStyle="bold" />

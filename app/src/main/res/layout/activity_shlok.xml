@@ -13,6 +13,10 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="112dp"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:text="Shlok"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -25,7 +29,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="621dp"
-        app:srcCompat="@drawable/hear" />
+        android:src="@drawable/hear" />
 
     <Button
         android:id="@+id/button2"
@@ -35,6 +39,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="166dp"
         android:layout_marginBottom="84dp"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:background="@drawable/bg_round"
         android:text="Significance"
         android:textColor="@android:color/black"
@@ -49,6 +57,10 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/bg_round"
         android:layout_marginBottom="84dp"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:text="Meaning"
         android:textColor="@android:color/black"
         android:textSize="16dp"

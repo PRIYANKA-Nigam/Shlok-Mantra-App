@@ -24,6 +24,10 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="Day"
+                android:shadowColor="@android:color/holo_green_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />

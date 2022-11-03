@@ -35,6 +35,10 @@
                 android:layout_gravity="center"
                 android:layout_weight="50"
                 android:gravity="center"
+                android:shadowColor="@android:color/holo_orange_light"
+                android:shadowDx="-15"
+                android:shadowDy="-15"
+                android:shadowRadius="13"
                 android:text="text"
                 android:textSize="30dp"
                 android:textStyle="bold" />

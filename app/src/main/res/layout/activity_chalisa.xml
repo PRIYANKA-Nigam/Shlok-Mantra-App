@@ -27,6 +27,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:text="@string/all_god_chalisa"
         android:textSize="25dp"
         android:textStyle="bold" />

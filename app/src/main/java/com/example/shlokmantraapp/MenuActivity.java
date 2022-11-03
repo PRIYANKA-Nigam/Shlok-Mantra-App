@@ -29,6 +29,17 @@ DrawerLayout drawerLayout;
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss(); }});builder.show(); }
+    public static void logout(final DarkModeActivity mainActivity3) {
+        AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity3);builder.setTitle("Logout");
+        builder.setMessage("Are You Sure You Want to Logout ?");
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
+            public void onClick(DialogInterface dialog, int which) {
+                mainActivity3.finishAffinity(); System.exit(0); }});
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss(); }});builder.show(); }
 
     public static void logout(final RateUsActivity mainActivity3) {
         AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity3);builder.setTitle("Logout");
@@ -86,10 +97,10 @@ DrawerLayout drawerLayout;
     public void ClickHome(View view){
         recreate();
     }
-
     public void ClickSetWallpaper(View view){
         redirectActivity(this,SetWallpaperActivity.class);
     }
+    public void ClickSetDarkMode(View view){ redirectActivity(this,DarkModeActivity.class); }
     public void ClickRateUs(View view){
         redirectActivity(this,RateUsActivity.class);
     }

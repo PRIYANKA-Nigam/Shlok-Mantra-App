@@ -40,6 +40,7 @@ public class SetWallpaperActivity extends AppCompatActivity {
     public void ClickSetWallpaper(View view){
         recreate();
     }
+    public void ClickSetDarkMode(View view){ MenuActivity.redirectActivity(this,DarkModeActivity.class); }
     public void ClickRateUs(View view){
         MenuActivity.redirectActivity(this,RateUsActivity.class);
     }

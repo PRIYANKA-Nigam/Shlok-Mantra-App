@@ -3,13 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="@android:color/white"
+    android:background="@android:color/holo_orange_light"
     android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/li"
         android:textSize="20sp"
+        android:shadowColor="@android:color/holo_green_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:textStyle="bold"
         android:paddingLeft="30dp"/>
 </LinearLayout>

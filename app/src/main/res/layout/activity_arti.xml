@@ -10,6 +10,10 @@
         android:id="@+id/rec"
         android:layout_width="382dp"
         android:layout_height="631dp"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
@@ -20,6 +24,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="@string/arti"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:gravity="center"
         android:textSize="40dp"
         android:textStyle="bold"/>

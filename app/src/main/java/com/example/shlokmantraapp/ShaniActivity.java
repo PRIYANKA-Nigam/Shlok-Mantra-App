@@ -67,6 +67,19 @@ public class ShaniActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==R.id.hi){
             ShowLang();
+        }  else if (item.getItemId()==R.id.dark){
+            startActivity(new Intent(getApplicationContext(),DarkModeActivity.class));
+        }
+        else if (item.getItemId()==R.id.share){
+            String s="Shani Mantra for :"+getString(R.string.shani1)+"\n\n"+getString(R.string.shani2)+"\n\n"+getString(R.string.shani3)+
+                    "\n\n"+getString(R.string.shani4)+"\n\n"+getString(R.string.shani5);
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, " -- " + s);
+            sendIntent.setType("text/plain");
+            Intent shareIntent = Intent.createChooser(sendIntent, null);
+            startActivity(shareIntent);
+            Toast.makeText(getApplicationContext(), "Sharing Mantra ...", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }

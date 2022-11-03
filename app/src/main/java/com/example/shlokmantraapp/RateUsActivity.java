@@ -46,6 +46,7 @@ public class RateUsActivity extends AppCompatActivity {
         MenuActivity.redirectActivity(this,MenuActivity.class);
     }
     public void ClickSetWallpaper(View view){ MenuActivity.redirectActivity(this,SetWallpaperActivity.class); }
+    public void ClickSetDarkMode(View view){ MenuActivity.redirectActivity(this,DarkModeActivity.class); }
     public void ClickRateUs(View view){
         recreate();
     }

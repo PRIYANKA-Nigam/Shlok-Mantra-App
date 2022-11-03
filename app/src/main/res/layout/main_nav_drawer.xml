@@ -11,6 +11,10 @@
         android:layout_width="match_parent" android:layout_height="wrap_content"
         android:text="Shlok And Mantra" android:textSize="20sp"
         android:textStyle="bold" android:textAlignment="center"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:textColor="#636363" android:gravity="center_horizontal" />
     <View android:layout_width="match_parent"
         android:layout_height="1dp" android:layout_marginTop="16dp"
@@ -24,7 +28,12 @@
         android:layout_height="wrap_content" android:orientation="horizontal"
         android:gravity="center_vertical" android:onClick="ClickHome">
         <TextView android:layout_width="0dp"
-            android:layout_height="wrap_content" android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/holo_green_light"
+            android:shadowDx="-15"
+            android:shadowDy="-15"
+            android:shadowRadius="13"
             android:text="Home" android:padding="12dp"
             android:layout_marginStart="16dp" android:layout_marginLeft="16dp" />
         <ImageView android:layout_width="wrap_content"
@@ -44,11 +53,37 @@
     <TextView  android:layout_width="0dp"
         android:layout_height="wrap_content" android:layout_weight="1"
         android:text="Set Wallpaper" android:padding="12dp"
+        android:shadowColor="@android:color/holo_green_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
         android:layout_marginStart="16dp" android:layout_marginLeft="16dp" />
     <ImageView android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginEnd="48dp"
         android:src="@drawable/wallpaper"
         android:layout_marginRight="48dp" /></LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_orange_dark"
+        android:onClick="ClickSetDarkMode">
+        <TextView  android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="Set Dark Mode" android:padding="12dp"
+            android:shadowColor="@android:color/holo_green_light"
+            android:shadowDx="-15"
+            android:shadowDy="-15"
+            android:shadowRadius="13"
+            android:layout_marginStart="16dp" android:layout_marginLeft="16dp" />
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginEnd="48dp"
+            android:src="@drawable/dark"
+            android:layout_marginRight="48dp" /></LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="4dp"
@@ -59,7 +94,12 @@
         android:layout_marginTop="10dp"
         android:gravity="center_vertical" android:onClick="ClickRateUs">
         <TextView android:layout_width="0dp"
-            android:layout_height="wrap_content" android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shadowColor="@android:color/holo_green_light"
+            android:shadowDx="-15"
+            android:shadowDy="-15"
+            android:shadowRadius="13"
             android:text="Rate Us" android:padding="12dp"
             android:layout_marginStart="16dp" android:layout_marginLeft="16dp" />
         <ImageView android:layout_width="wrap_content"
@@ -78,6 +118,10 @@
         <TextView android:layout_width="0dp"
             android:layout_height="wrap_content" android:layout_weight="1"
             android:text="Logout" android:padding="12dp"
+            android:shadowColor="@android:color/holo_green_light"
+            android:shadowDx="-15"
+            android:shadowDy="-15"
+            android:shadowRadius="13"
             android:layout_marginStart="16dp" android:layout_marginLeft="16dp" />
         <ImageView android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_marginEnd="48dp"

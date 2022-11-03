@@ -560,7 +560,7 @@ Vishwanath Dharat Dhyaan Sharan Hian Tumhari
 Jai Jai Shri Shanidev Bhaktan Hitkari
  </string>
     <string name="all_god_chalisa" translatable="false"><u>All God Chalisa</u></string>
-<string name="o">
+    <string name="o">
     Jai Ganesha Girija suvan mangal mul sujaan,Kehat ayodhyadas tum deu abhae vardan,Jai girijapati deendeyala sada karat santan pratipala,
 Bhaal chandrama sohat niike kaanan, kundal naagphani ke Ang gaur shir gang bahaye mundmaal tan shaar lagaye,Vastra khaal baghambar sohe chhavi ko dekh naag mann mohe,
 Maina matu ki have dulari baam ang sohat chhavi nyari,Kar trishul sohat chhavi bhari karat sada shatrun shayakari
@@ -584,7 +584,7 @@ Pandit trayodashi ko lave dhyan purvak hom karave,Trayodashi vrat kare hamesha t
 Kahe ayodhya aas tumhari jani sakal dukh harhu hamari
 
 </string>
- <string name="p">
+    <string name="p">
      Jaya Jaya Ganapati Gan Raaju Mangala Bharana Karana ,Shubha Kaaju Jaya Gajabadana Sadana, Sukhadaataa Vishva Vinaayaka Buddhi Vidhaata
      Vakra Tunda Shuchi Shunda Suhaavana Tilaka, Tripunda Bhaala Mana Bhaavana Raajata Mani Muktana Ura Maala Svarna Mukuta Shira Nayana Vishaala
      Pustaka Paani Kuthaara Trishoolam Modaka Bhoga, Sugandhita Phoolam Sundara Pitaambara Tana Saajita Charana Paaduka Muni Mana Raajita
@@ -603,7 +603,7 @@ Kahe ayodhya aas tumhari jani sakal dukh harhu hamari
      Baalaka Ke Dhada Upara Dhaarayo Praana,
 
  </string>
-<string name="q">
+    <string name="q">
     Jai Hanuman Gyaan Gun Sagar Jai Kapis Teehun Lok Ujagar Ram Doot Atulit Bal Dhama Anjani-Putra Pavansut Nama
     Mahabir Bikram Bajrangi,Kumati Nivaar Sumati Ke Sangi ,Kanchan Baran Biraaj Subesa,Kaanan Kundal Kunchit Kesa,
     Haath Bajra Aau Dhwaja Biraaje,Kaandhe Moonj Janeu Saaje Sankar Suvan Kesarinandan,Tej Prataap Maha Jag Bandan
@@ -625,7 +625,7 @@ Kahe ayodhya aas tumhari jani sakal dukh harhu hamari
     Jai Jai Jai Hanuman Gosaai,Kripa Karahun Gurudev Ki Naai Jo Sat Baar Paath Kar Koi,Chhootahin Bandi Maha sukh Hoyi
     Jo Yeh Padhe Hanuman Chalisa,Hoye Siddhi Saakhi Gaurisa Tulsidas Sada Harichera,Kije Naath Hridaya Mahn Dera
 </string>
-<string name="r">
+    <string name="r">
     Shri Raghubir bhagat hitkari, suni lije prabhu araj hamari.
 Nisidin dhyan dhare jo koi, ta sam bhakt aur nahi hoi.
 
@@ -693,7 +693,7 @@ Saag patra so bhog lagave, so nar sakal siddhata pave.
 Aant samay raghubarpur jai, jaha janma haribhakta kai.
 Shri haridas kahai aru gave, so vaikunth dham ko pave.
 </string>
-<string name="s">
+    <string name="s">
     Jai Jai Kamalasan Jagamula, Rahahu Sada Janapai Anukula.
 Rup Chaturbhuj Param Suhavan, Tumhen Ahain Chaturdik Anan.
 
@@ -835,7 +835,7 @@ Paap Dosh Santaap Nashaao, Bhav Bandhan Se Mukt Karaao.
 Sut Sampati De Sukh Upjaao, Nij Charanan Ka Daas Banaao,
 Nigam Sadaa Ye Vinay Sunavai, Padhai Sune So Jan Sukh Paavai.
     </string>
- <string name="u">
+    <string name="u">
      Jay Ganesh Girija Suvan, Mangal Karan Kripaal,
 Deenan Ke Dukh Door Kari, Kijei Naath Nihaal.
 Jay Jay Shri Shanidev Prabhu, Sunahu Vinay Maharaaj,
@@ -901,7 +901,7 @@ Jo Pandit Suyogya Bulavaai, Vidhivat Shani Grah Shaanti Karaai.
 Peepal Jal Shani Divas Chadhaavat, Deep Daan Dei Bahu Sukh Paavat.
 Kahat Ram Sundar Prabhu Daasa, Shani Sumirat Sukh Hot Prakaasha.
  </string>
-<string name="v">
+    <string name="v">
 Sindu Suta Main Sumirau Tohi,Gyan, Buddhi, Vidya Do Mohi.
 
 Tum Samaan Nahi Koi Upkari,Sab Vidhi Puravahu Aas Hamari.
@@ -979,7 +979,7 @@ Roop Chaturbhuja Karake Dharan,Kashta Mor Ab Karahu Nivaran.
 
 Kehi Prakar Main Karaun Badai,Gyan Buddhi Mohin Nahin Adhikai.
 </string>
-<string name="w">
+    <string name="w">
     Namo namo Durge sukh karani,
 Namo namo Ambe dukh harani.
 Nirankar hai jyoti tumhari
@@ -1083,7 +1083,7 @@ Sab sukh bhog parampad pave
 Devidas sharan nij jani,
 Karahu kripa Jagdamb Bhavani
 </string>
-<string name="x">
+    <string name="x">
     Jai Shri Sakal Buddhi Balarasi,Jai Sarvagya Amar Avinasi.
 
 Jai Jai Jai Veenakar Dhari,Karati Sada Suhansa Savari.
@@ -1162,7 +1162,7 @@ Bandi Patha Karein Shata Bara,Bandi Pasha Dura Ho Sara.
 
 Karahu Kripa Bhavamukti Bhavani,Mo Kahan Dasa Sada Nija Jani.
 </string>
- <string name="y">
+    <string name="y">
      Ari Mad Maan Mitaavan Haari, Mundamaal Gal Sohat Pyaari.
 Ashtabhuji Sukhdaayak Maata, Dushtdalan Jag Me Vikhyaata.
 
@@ -1223,7 +1223,7 @@ Daya Drishti Herau Jagadamba, Kehi Kaaran Maa Kiyau Vilamba.
 Karahu Maatu Bhaktan Rakhvaali, Jayati Jayati Kaali Kankaali.
 Sevak Deen Anaath Anaari, Bhaktibhaav Yuti Sharan Tumhaari.
  </string>
-<string name="z">
+    <string name="z">
     Bhurbhuvah Swah Om Yut Janani,
 Gayatri Nit Kalimal Dahani.
 
@@ -1344,7 +1344,7 @@ Dhan Vaibhav Yash Tej Uchhaoo.
 Sakal Badhen Upaje Sukh Nana,
 Jo Yah Path Karai Dhari Dhyana.
 </string>
- <string name="z1">
+    <string name="z1">
      Jai Santoshi Maa Jaga Janani,Khala Mati Dushta Daitya Dala Hanani.
 
 Ganapati Deva Tumhare Tata,Riddhi Siddhi Kahalavahan Mata.
@@ -1425,7 +1425,7 @@ Nita Prati Patha Karai Ik Bara,So Nara Rahai Tumhara Pyara.
 
 Nama Leta Byadha Saba Bhage,Roga Dosha Kabahun Nahin Lage.
  </string>
-<string name="z2">
+    <string name="z2">
     Jai Jai Jai Shri Kubera Bhandari,
 Dhana Maya Ke Tum Adhikari.
 
@@ -1563,14 +1563,22 @@ Manasa Parivara Kubera Kirti Gai.
     <string name="wed">For the person whose marriage faces various obstacles must worship the holy god and please them by chanting marriage mantra.Doing this regularly will be bestowed with all the blessings he need by the holy god and can fulfill all his desires.</string>
     <string name="vidya">There are mantras dedicated to the students who are giving effort in their exams and studies but could not make out in that.Chanting those mantra daily will give them success in their career path.</string>
 
-    <string name="aa" translatable="false">Goddess Lakshmi</string> <string name="bb" translatable="false">Goddess Durga</string>
-    <string name="cc" translatable="false">Goddess Saraswati</string> <string name="dd" translatable="false">Goddess Kali</string>
-    <string name="ee" translatable="false">Goddess Gayatri</string> <string name="ff" translatable="false">Goddess Santoshi</string>
-    <string name="gg" translatable="false">Lord Shiva</string> <string name="hh" translatable="false">Lord Ganesha</string>
-    <string name="ii" translatable="false">Lord Hanumaan</string> <string name="jj" translatable="false">Lord Rama</string>
-    <string name="kk" translatable="false">Lord Krishna</string> <string name="ll" translatable="false">Lord Vishnu</string>
-    <string name="mm" translatable="false">Lord Brahma</string> <string name="nn" translatable="false">Lord Shani Dev</string>
+    <string name="aa" translatable="false">Goddess Lakshmi</string>
+    <string name="bb" translatable="false">Goddess Durga</string>
+    <string name="cc" translatable="false">Goddess Saraswati</string>
+    <string name="dd" translatable="false">Goddess Kali</string>
+    <string name="ee" translatable="false">Goddess Gayatri</string>
+    <string name="ff" translatable="false">Goddess Santoshi</string>
+    <string name="gg" translatable="false">Lord Shiva</string>
+    <string name="hh" translatable="false">Lord Ganesha</string>
+    <string name="ii" translatable="false">Lord Hanumaan</string>
+    <string name="jj" translatable="false">Lord Rama</string>
+    <string name="kk" translatable="false">Lord Krishna</string>
+    <string name="ll" translatable="false">Lord Vishnu</string>
+    <string name="mm" translatable="false">Lord Brahma</string>
+    <string name="nn" translatable="false">Lord Shani Dev</string>
     <string name="deity_famous_living_place" translatable="false"><u>Abode of Deities</u></string>
+    <string name="dark_mode">Dark Mode</string>
     <string-array name="aa">
         <item>Mahalakshmi Temple,Dahanu,Mumbai,Ahmadabad</item>
         <item>Mohiniraj Laxmi Temple,Ahmednagar</item>
@@ -1685,7 +1693,7 @@ Manasa Parivara Kubera Kirti Gai.
         <item>Raghunath Temple, Jammu</item>
     </string-array>
     <string-array name="kk">
-    <item>Prem Mandir, Vrindavan, Mathura</item>
+        <item>Prem Mandir, Vrindavan, Mathura</item>
         <item>Dwarkadheesh Temple,Gujrat</item>
         <item>ISKCON Temple</item>
         <item>Dwarkadhish Temple, Dwarka</item>
@@ -1696,7 +1704,7 @@ Manasa Parivara Kubera Kirti Gai.
         <item>Udupi Sri Krishna Matha, Udupi</item>
     </string-array>
     <string-array name="ll">
-<item>Badrinath Temple in Badrinath</item>
+        <item>Badrinath Temple in Badrinath</item>
         <item>Jagannath Temple in Puri</item>
         <item>Sri Venkateswara Swamy Temple at Tirupati</item>
         <item>Varadharaja Perumal Temple in Kanchipuram</item>
@@ -1707,7 +1715,7 @@ Manasa Parivara Kubera Kirti Gai.
         <item>Sri Ranganathaswamy Temple in Srirangam</item>
     </string-array>
     <string-array name="mm">
-<item>Brahma Temple, Pushkar. Rajasthan</item>
+        <item>Brahma Temple, Pushkar. Rajasthan</item>
         <item>Asotra Brahma Temple, Barmer</item>
         <item>Adi Brahma Temple, Khokhan, Kullu Valley</item>
         <item>Brahma Temple, Kumbakonam</item>
@@ -1715,7 +1723,7 @@ Manasa Parivara Kubera Kirti Gai.
         <item>Brahmapureeswarar Temple, Thirupattur</item>
     </string-array>
     <string-array name="nn">
-<item>Shani Shinganapur, Maharashtra</item>
+        <item>Shani Shinganapur, Maharashtra</item>
         <item>Shani Dham, Delhi</item>
         <item>Thirunallar, Tamil Nadu</item>
         <item>Shanichara, Madhya Pradesh</item>
