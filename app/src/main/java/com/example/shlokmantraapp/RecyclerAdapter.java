@@ -40,6 +40,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
             for (int i=0;i<days.length;i++){
                 dayarrayList.add(days[i]);
             }
+        }if (parentArrayList.get(position).equals("Other Useful Mantra")){
+            String[] days={"Other Mantra"};
+            for (int i=0;i<days.length;i++){
+                dayarrayList.add(days[i]);
+            }
         }
         if(parentArrayList.get(position).equals("Goddess Mantra")){
             String[] days={"Goddess Lakshmi","Goddess Saraswati","Goddess Kali","Goddess Durga","Goddess Gayatri","Goddess Santoshi"};

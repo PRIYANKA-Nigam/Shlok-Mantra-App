@@ -19,12 +19,6 @@ ImageView imageView; Button button;
         textView=findViewById(R.id.textView);
         button=findViewById(R.id.button);
         imageView=findViewById(R.id.imageView);
-//        getSupportActionBar().hide();
-//        getSupportActionBar().setTitle("full screen image");
-//        Intent intent=getIntent();
-//        int position=intent.getExtras().getInt("id");
-//        Image image=new Image(this);
-//        imageView.setImageResource(image.img[position]);
         String s= getIntent().getStringExtra("name");
         textView.setText(s);
         if(s.equalsIgnoreCase("Lord Shiva")){
@@ -33,6 +27,16 @@ ImageView imageView; Button button;
                 @Override
                 public void onClick(View view) {
                     Intent intent= new Intent(MainActivity2.this,ShivaActivity.class);
+                    startActivity(intent);
+                }
+            });
+        }
+        if(s.equalsIgnoreCase("Other Mantra")){
+            imageView.setImageResource(R.drawable.all_god);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= new Intent(MainActivity2.this,NewMantraActivity.class);
                     startActivity(intent);
                 }
             });

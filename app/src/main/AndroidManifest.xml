@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Light">
-        <activity android:name=".DarkModeActivity"></activity>
+        <activity android:name=".NewMantraActivity"></activity>
+        <activity android:name=".DarkModeActivity" />
         <activity android:name=".FinalChalisaActivity" />
         <activity android:name=".FinalActivity" />
         <activity android:name=".ChalisaActivity" />
@@ -20,7 +21,9 @@
         <activity android:name=".SetWallpaper2Activity" />
         <activity android:name=".RateUsActivity" />
         <activity android:name=".SetWallpaperActivity" />
-        <activity android:name=".MenuActivity" />
+        <activity android:name=".MenuActivity" android:supportsPictureInPicture="true"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation">
+        </activity>
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

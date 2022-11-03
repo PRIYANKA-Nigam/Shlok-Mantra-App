@@ -7,6 +7,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.PictureInPictureParams;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
@@ -85,6 +86,14 @@ DrawerLayout drawerLayout;
         drawerLayout=findViewById(R.id.draw);
 
     }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    protected void onUserLeaveHint() {
+        PictureInPictureParams pictureInPictureParams= new PictureInPictureParams.Builder().build();
+        enterPictureInPictureMode(pictureInPictureParams);
+    }
+
     public void ClickMenu(View view){
         openDrawer(drawerLayout);
     }

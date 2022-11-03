@@ -1562,7 +1562,6 @@ Manasa Parivara Kubera Kirti Gai.
     <string name="chhath">Chhath is an ancient Hindu festival historically native to the Indian subcontinent,more specifically, the Indian states of Bihar, Uttar Pradesh,West Bengal,Jharkhand,and the Nepalese provinces of Madhesh and Lumbini.Prayers during Chhath puja are dedicated to the solar deity, Surya, to show gratitude and thankfulness for bestowing the bounties of life on earth and to request that certain wishes be granted</string>
     <string name="wed">For the person whose marriage faces various obstacles must worship the holy god and please them by chanting marriage mantra.Doing this regularly will be bestowed with all the blessings he need by the holy god and can fulfill all his desires.</string>
     <string name="vidya">There are mantras dedicated to the students who are giving effort in their exams and studies but could not make out in that.Chanting those mantra daily will give them success in their career path.</string>
-
     <string name="aa" translatable="false">Goddess Lakshmi</string>
     <string name="bb" translatable="false">Goddess Durga</string>
     <string name="cc" translatable="false">Goddess Saraswati</string>
@@ -1578,7 +1577,7 @@ Manasa Parivara Kubera Kirti Gai.
     <string name="mm" translatable="false">Lord Brahma</string>
     <string name="nn" translatable="false">Lord Shani Dev</string>
     <string name="deity_famous_living_place" translatable="false"><u>Abode of Deities</u></string>
-    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode" translatable="false">Dark Mode</string>
     <string-array name="aa">
         <item>Mahalakshmi Temple,Dahanu,Mumbai,Ahmadabad</item>
         <item>Mohiniraj Laxmi Temple,Ahmednagar</item>
@@ -1729,4 +1728,52 @@ Manasa Parivara Kubera Kirti Gai.
         <item>Shanichara, Madhya Pradesh</item>
         <item>Shani Temple, Indore</item>
     </string-array>
+<string name="saras">
+    he hansavaahini, gyan dayini
+amb vimal mati de,
+amb vimal mati de.
+jag siramaur banaen bharat,
+vah bal vikram de,
+vah bal vikram de.
+
+he hansavaahini, gyan dayini
+amb vimal mati de,
+amb vimal mati de.
+jag siramaur banaen bharat,
+vah bal vikram de,
+vah bal vikram de.
+
+he hansavahini, gyan dayini
+amb vimal mati de,
+amb vimal mati de.
+
+sahas shil hrday mein bhar de,
+jivan tyag-tapomar kar de,
+sanyam saty sneh ka var de.
+svabhiman bhar de,
+svabhiman bhar de.
+
+he hansavahini, gyan dayini
+amb vimal mati de,
+amb vimal mati de.
+
+lav-kush, dhruv, prahalad banen ham
+manavata ka tras haren ham,
+sita, savitri, durga man,
+phir ghar-ghar bhar de,
+phir ghar-ghar bhar de.
+
+he hansavahini, gyan dayini
+amb vimal mati de,
+amb vimal mati de.
+he hansavahini, gyan dayini
+amb vimal mati de,
+amb vimal mati de.
+</string>
+    <string name="ot1">oṃ tryámbakaṃ yajāmahe sugandhíṃ puṣṭi-vardhánam urvārukam íva bandhánān mṛtyor mukṣīya māmṛtā́t</string>
+    <string name="ot2">Yaa Devi Sarva-Bhutessu Shakti-Ruupenna Samsthitaa,Namas-Tasyai Namas-Tasyai Namas-Tasyai Namo Namah.</string>
+    <string name="ot3">Gajananam Bhoota Ganadi Sevitam,Kapittha Jammbu Phala Charu Bhakshanam.Umasutam Shoka Vinasha karakam,Namami Vighneshwara Pada Pankajam.</string>
+    <string name="ot4">Shaanta-Aakaaram Bhujaga-Shayanam Padma-Naabham Sura-Iisham,Vishva-Aadhaaram Gagana-Sadrsham Megha-Varnna Shubha-Anggam.Lakssmii-Kaantam Kamala-Nayanam Yogibhir-Dhyaana-Gamyam,Vande Vissnnum Bhava-Bhaya-Haram Sarva-Loka-Eka-Naatham.</string>
+    <string name="ot5">śrī rāma rāma rāmeti rame rāme manorame .sahasranāma tat tulyaṃ rāmanāma varānane ..</string>
+    <string name="ot6">Om dyauh shanti rantariksham shantih Prithvi shantirapah shantih Oshadhayah shantih Vanaspatayah shantih Vishvedevaah shantih Brahma shantih Sarvam shantih Shantireva shantih Saamaa shantiredhih Om shaantih, shaantih, shaantih!</string>
 </resources>

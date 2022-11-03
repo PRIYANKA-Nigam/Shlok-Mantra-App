@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         adapter=new RecyclerAdapter(itemarray,MainActivity.this);
         recyclerView.setAdapter(adapter);
-        String [] items={"God Mantra","Goddess Mantra","Lakshmi & Kuber Mantra",
+        String [] items={"God Mantra","Goddess Mantra","Lakshmi & Kuber Mantra","Other Useful Mantra",
         "Mantra for Study/Exams","Mantra for Marriage","Chhath puja Mantra","Karwa Chauth Mantra"};
         for (int i=0;i<items.length;i++){
             itemarray.add(items[i]);

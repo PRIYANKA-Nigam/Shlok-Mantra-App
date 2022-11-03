@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@android:color/holo_orange_dark"
+    android:layout_margin="5dp"
+    tools:context=".NewMantraActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:paddingVertical="15dp"
+        android:layout_height="206dp"
+        android:paddingHorizontal="10dp"
+        android:scrollbars="horizontal"
+        android:scrollIndicators="left"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/rec"
+        android:gravity="center"
+        android:shadowColor="@android:color/holo_green_light"
+        android:shadowDx="-15"
+        android:shadowDy="-15"
+        android:shadowRadius="13"
+        android:text="All Deities Mantra"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="386dp"
+        android:layout_height="424dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView13">
+
+        <TextView
+            android:id="@+id/ttt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView13"
+            android:shadowColor="@android:color/holo_green_light"
+            android:shadowDx="-15"
+            android:shadowDy="-15"
+            android:shadowRadius="13"
+            android:text="Other Useful Mantra --->"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="52dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="22dp"
+        android:src="@drawable/hear" />
+</RelativeLayout>
