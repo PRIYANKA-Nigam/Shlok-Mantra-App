@@ -15,44 +15,50 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.shlokmantraapp.Arti.ArtiActivity;
+import com.example.shlokmantraapp.Chalisa.ChalisaActivity;
+import com.example.shlokmantraapp.Drawer.DarkModeActivity;
+import com.example.shlokmantraapp.Drawer.DeityTemples.DeityPlaceActivity;
+import com.example.shlokmantraapp.Drawer.RateUsActivity;
+import com.example.shlokmantraapp.Drawer.SetWallpaper.SetWallpaperActivity;
+import com.example.shlokmantraapp.Shlok.MainActivity;
+import com.example.shlokmantraapp.Songs.DevotionalSongActivity;
+
 public class MenuActivity extends AppCompatActivity {
 LinearLayout layout,layout2,layout3,layout4;
 DrawerLayout drawerLayout;
 
     public static void logout(final SetWallpaperActivity mainActivity3) {
-        AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity3);builder.setTitle("Logout");
+        dialog(mainActivity3);
+    }
+    public static void logout(final DevotionalSongActivity mainActivity3) {
+        dialog(mainActivity3);
+    }
+    public static void logout(final DeityPlaceActivity mainActivity3) {
+        dialog(mainActivity3);
+    }
+    private static void dialog(Activity activity) {
+        AlertDialog.Builder builder=new AlertDialog.Builder(activity);
+        builder.setTitle("Logout");
         builder.setMessage("Are You Sure You Want to Logout ?");
         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
             public void onClick(DialogInterface dialog, int which) {
-                mainActivity3.finishAffinity(); System.exit(0); }});
+               activity.finishAffinity(); System.exit(0); }});
         builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss(); }});builder.show(); }
+                dialog.dismiss(); }});
+        builder.show();
+    }
+
     public static void logout(final DarkModeActivity mainActivity3) {
-        AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity3);builder.setTitle("Logout");
-        builder.setMessage("Are You Sure You Want to Logout ?");
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
-            public void onClick(DialogInterface dialog, int which) {
-                mainActivity3.finishAffinity(); System.exit(0); }});
-        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss(); }});builder.show(); }
+       dialog(mainActivity3);
+    }
 
     public static void logout(final RateUsActivity mainActivity3) {
-        AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity3);builder.setTitle("Logout");
-        builder.setMessage("Are You Sure You Want to Logout ?");
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
-            public void onClick(DialogInterface dialog, int which) {
-                mainActivity3.finishAffinity(); System.exit(0); }});
-        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss(); }});builder.show(); }
+       dialog(mainActivity3);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,25 +68,25 @@ DrawerLayout drawerLayout;
         layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
         layout2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),ArtiActivity.class));
+                startActivity(new Intent(getApplicationContext(), ArtiActivity.class));
             }
         });
         layout3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), DeityPlaceActivity.class));
+                startActivity(new Intent(getApplicationContext(), DevotionalSongActivity.class));
             }
         });
         layout4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),ChalisaActivity.class));
+                startActivity(new Intent(getApplicationContext(), ChalisaActivity.class));
             }
         });
         drawerLayout=findViewById(R.id.draw);
@@ -109,6 +115,9 @@ DrawerLayout drawerLayout;
     public void ClickSetWallpaper(View view){
         redirectActivity(this,SetWallpaperActivity.class);
     }
+    public void ClickGod(View view){
+        redirectActivity(this,DeityPlaceActivity.class);
+    }
     public void ClickSetDarkMode(View view){ redirectActivity(this,DarkModeActivity.class); }
     public void ClickRateUs(View view){
         redirectActivity(this,RateUsActivity.class);
@@ -116,14 +125,9 @@ DrawerLayout drawerLayout;
     public void ClickLogout(View view){
         logout(this);
     }
-    public static void logout(final MenuActivity mainActivity) { AlertDialog.Builder builder=new AlertDialog.Builder(mainActivity);
-        builder.setTitle("Logout");builder.setMessage("Are You Sure You Want to Logout ?");
-        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)  @Override
-            public void onClick(DialogInterface dialog, int which) {
-                mainActivity.finishAffinity();System.exit(0); }});
-        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() { @Override
-        public void onClick(DialogInterface dialog, int which) { dialog.dismiss(); }}); builder.show(); }
+    public static void logout(final MenuActivity mainActivity) {
+    dialog(mainActivity);
+    }
     public static void redirectActivity(Activity activity, Class aclass) { Intent intent=new Intent(activity,aclass);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); activity.startActivity(intent); } @Override
     protected void onPause() { super.onPause(); closeDrawer(drawerLayout); }

@@ -7,7 +7,7 @@
     android:padding="10dp"
     android:background="@android:color/holo_orange_dark"
     android:layout_margin="5dp"
-    tools:context=".NewMantraActivity">
+    tools:context=".Shlok.GodShlok.OtherMantra.NewMantraActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rec"

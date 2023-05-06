@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:background="@android:color/holo_orange_dark"
-    tools:context=".ShaniShlokActivity">
+    tools:context=".Shlok.GodShlok.ShaniMantra.ShaniShlokActivity">
     <TextView
         android:id="@+id/textView2"
         android:layout_width="391dp"

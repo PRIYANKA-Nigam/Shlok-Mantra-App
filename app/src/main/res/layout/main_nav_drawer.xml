@@ -71,6 +71,28 @@
         android:orientation="horizontal" android:gravity="center_vertical"
         android:layout_marginTop="10dp"
         android:background="@android:color/holo_orange_dark"
+        android:onClick="ClickGod">
+        <TextView  android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="Abode of Gods" android:padding="12dp"
+            android:shadowColor="@android:color/holo_green_light"
+            android:shadowDx="-15"
+            android:shadowDy="-15"
+            android:shadowRadius="13"
+            android:layout_marginStart="16dp" android:layout_marginLeft="16dp" />
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginEnd="48dp"
+            android:src="@drawable/abode"
+            android:layout_marginRight="48dp" /></LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@android:color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_orange_dark"
         android:onClick="ClickSetDarkMode">
         <TextView  android:layout_width="0dp"
             android:layout_height="wrap_content" android:layout_weight="1"

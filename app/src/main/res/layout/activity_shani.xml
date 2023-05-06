@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="15dp"
-    tools:context=".ShaniActivity">
+    tools:context=".Shlok.GodShlok.ShaniMantra.ShaniActivity">
 
     <TextView
         android:id="@+id/textView2"

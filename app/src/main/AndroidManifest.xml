@@ -11,19 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Light">
-        <activity android:name=".NewMantraActivity"></activity>
-        <activity android:name=".DarkModeActivity" />
-        <activity android:name=".FinalChalisaActivity" />
-        <activity android:name=".FinalActivity" />
-        <activity android:name=".ChalisaActivity" />
-        <activity android:name=".DeityPlaceActivity" />
-        <activity android:name=".ArtiActivity" />
-        <activity android:name=".SetWallpaper2Activity" />
-        <activity android:name=".RateUsActivity" />
-        <activity android:name=".SetWallpaperActivity" />
-        <activity android:name=".MenuActivity" android:supportsPictureInPicture="true"
-            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation">
-        </activity>
+        <activity android:name=".Songs.DevotionalSongActivity"></activity>
+        <activity android:name=".Shlok.GodShlok.OtherMantra.NewMantraActivity" />
+        <activity android:name=".Drawer.DarkModeActivity" />
+        <activity android:name=".Chalisa.FinalChalisaActivity" />
+        <activity android:name=".Arti.FinalActivity" />
+        <activity android:name=".Chalisa.ChalisaActivity" />
+        <activity android:name=".Drawer.DeityTemples.DeityPlaceActivity" />
+        <activity android:name=".Arti.ArtiActivity" />
+        <activity android:name=".Drawer.SetWallpaper.SetWallpaper2Activity" />
+        <activity android:name=".Drawer.RateUsActivity" />
+        <activity android:name=".Drawer.SetWallpaper.SetWallpaperActivity" />
+        <activity
+            android:name=".MenuActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:supportsPictureInPicture="true"></activity>
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,32 +33,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShaniShlokActivity" />
-        <activity android:name=".SantoshiActivity" />
-        <activity android:name=".ShaniActivity" />
-        <activity android:name=".OtherMantraActivity" />
-        <activity android:name=".GoddessShlokActivity" />
+        <activity android:name=".Shlok.GodShlok.ShaniMantra.ShaniShlokActivity" />
+        <activity android:name=".Shlok.GoddessShlok.SantoshiMantra.SantoshiActivity" />
+        <activity android:name=".Shlok.GodShlok.ShaniMantra.ShaniActivity" />
+        <activity android:name=".Shlok.OtherMantra.OtherMantraActivity" />
+        <activity android:name=".Shlok.GoddessShlok.GoddessShlokActivity" />
         <activity
-            android:name=".SignificanceActivity"
-            android:parentActivityName=".ShlokActivity" />
+            android:name=".Shlok.GodShlok.ShivaMantra.SignificanceActivity"
+            android:parentActivityName=".Shlok.GodShlok.ShivaMantra.ShlokActivity" />
         <activity
-            android:name=".MeaningActivity"
-            android:parentActivityName=".ShlokActivity" />
-        <activity android:name=".ShlokActivity" />
-        <activity android:name=".GayatriActivity" />
-        <activity android:name=".SaraswatiActivity" />
-        <activity android:name=".LakshmiActivity" />
-        <activity android:name=".KaliActivity" />
-        <activity android:name=".DurgaActivity" />
-        <activity android:name=".VishnuActivity" />
-        <activity android:name=".BramhaActivity" />
-        <activity android:name=".KrishnaActivity" />
-        <activity android:name=".RamaActivity" />
-        <activity android:name=".HanumanActivity" />
-        <activity android:name=".GaneshaActivity" />
-        <activity android:name=".ShivaActivity" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity" />
+            android:name=".Shlok.GodShlok.ShivaMantra.MeaningActivity"
+            android:parentActivityName=".Shlok.GodShlok.ShivaMantra.ShlokActivity" />
+        <activity android:name=".Shlok.GodShlok.ShivaMantra.ShlokActivity" />
+        <activity android:name=".Shlok.GoddessShlok.GayatriMantra.GayatriActivity" />
+        <activity android:name=".Shlok.GoddessShlok.SaraswatiMantra.SaraswatiActivity" />
+        <activity android:name=".Shlok.GoddessShlok.LakshmiMantra.LakshmiActivity" />
+        <activity android:name=".Shlok.GoddessShlok.KaliMantra.KaliActivity" />
+        <activity android:name=".Shlok.GoddessShlok.DurgaMantra.DurgaActivity" />
+        <activity android:name=".Shlok.GodShlok.VishnuMantra.VishnuActivity" />
+        <activity android:name=".Shlok.GodShlok.BramhaMantra.BramhaActivity" />
+        <activity android:name=".Shlok.GodShlok.KrishnaMantra.KrishnaActivity" />
+        <activity android:name=".Shlok.GodShlok.RamaMantra.RamaActivity" />
+        <activity android:name=".Shlok.GodShlok.HanumanMantra.HanumanActivity" />
+        <activity android:name=".Shlok.GodShlok.GaneshaMantra.GaneshaActivity" />
+        <activity android:name=".Shlok.GodShlok.ShivaMantra.ShivaActivity" />
+        <activity android:name=".Shlok.MainActivity2" />
+        <activity android:name=".Shlok.MainActivity" />
     </application>
 
 </manifest>

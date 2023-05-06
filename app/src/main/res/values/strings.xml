@@ -1576,7 +1576,7 @@ Manasa Parivara Kubera Kirti Gai.
     <string name="ll" translatable="false">Lord Vishnu</string>
     <string name="mm" translatable="false">Lord Brahma</string>
     <string name="nn" translatable="false">Lord Shani Dev</string>
-    <string name="deity_famous_living_place" translatable="false"><u>Abode of Deities</u></string>
+    <string name="deity_famous_living_place" translatable="false"><u>Deities Temples</u></string>
     <string name="dark_mode" translatable="false">Dark Mode</string>
     <string-array name="aa">
         <item>Mahalakshmi Temple,Dahanu,Mumbai,Ahmadabad</item>
@@ -1728,7 +1728,7 @@ Manasa Parivara Kubera Kirti Gai.
         <item>Shanichara, Madhya Pradesh</item>
         <item>Shani Temple, Indore</item>
     </string-array>
-<string name="saras">
+    <string name="saras">
     he hansavaahini, gyan dayini
 amb vimal mati de,
 amb vimal mati de.

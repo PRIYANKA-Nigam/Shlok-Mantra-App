@@ -5,7 +5,7 @@
     android:id="@+id/ddraw"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DarkModeActivity">
+    tools:context=".Drawer.DarkModeActivity">
     <LinearLayout
         android:id="@+id/lin"
         android:layout_width="match_parent"

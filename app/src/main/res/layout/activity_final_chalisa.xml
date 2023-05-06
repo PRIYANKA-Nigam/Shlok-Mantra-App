@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="15dp"
     android:background="@android:color/holo_orange_dark"
-    tools:context=".FinalChalisaActivity">
+    tools:context=".Chalisa.FinalChalisaActivity">
     <TextView
         android:id="@+id/textView16"
         android:layout_width="324dp"
